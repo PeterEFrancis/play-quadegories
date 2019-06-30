@@ -8,12 +8,12 @@ p {
   font-size: 16pt;
 }
 .launch-game {
-  border: 1px solid black !important;
+  border: 5px solid black !important;
 }
 
 .launch-game:hover {
   background-color: black;
 }
-.launch-game:hover + #btn-text{
+.launch-game:hover + #launch{
   color: white;
 }
