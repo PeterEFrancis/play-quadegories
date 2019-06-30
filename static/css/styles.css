@@ -8,7 +8,8 @@ p {
   font-size: 16pt;
 }
 .launch-game {
-  border: 5px solid black !important;
+  border: 5px solid black;
+  box-radius:5px;
 }
 
 .launch-game:hover {
