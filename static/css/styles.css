@@ -15,5 +15,5 @@ p {
   background-color: black;
 }
 .launch-game:hover + #btn-text{
-  font-color: white;
+  color: white;
 }
