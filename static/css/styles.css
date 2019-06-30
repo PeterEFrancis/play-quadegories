@@ -1,16 +1,19 @@
 h1 {
-  font-size:40pt;
+  font-size: 40pt;
 }
 h2 {
-  font-size:30pt;
+  font-size: 30pt;
 }
 p {
-  font-size:20pt;
+  font-size: 16pt;
 }
 .launch-game {
-  background-color: grey;
-  border: 3pt solid grey;
+  border: 1px solid black !important;
 }
+
 .launch-game:hover {
-  background-color: #e0bac3
+  background-color: black;
+}
+.launch-game:hover + #btn-text{
+  font-color: white;
 }
