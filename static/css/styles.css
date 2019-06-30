@@ -8,8 +8,7 @@ h2 {
   font-size: 16pt;
 }
 .launch-game {
-  border: 5px solid black;
-  box-radius:5px;
+  border: 1px solid black;
 }
 
 .launch-game:hover {
