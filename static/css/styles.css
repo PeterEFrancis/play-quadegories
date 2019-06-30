@@ -1,13 +1,13 @@
 h1 {
-  font-size:60pt;
+  font-size:40pt;
 }
 h2 {
-  font-size:40pt;
+  font-size:30pt;
 }
 p {
   font-size:16pt;
 }
-.launch-gmae {
+.launch-game {
   width:100%;
   background-color: grey;
 }
