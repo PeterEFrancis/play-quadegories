@@ -4,5 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-  return render_template('index.html', generated = 'testing,testing, 123'
-  
+  return render_template('index.html', generated = 'testingTesting123')
