@@ -1,140 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
+<!--     <link href="favicon.ico" rel="icon" type="image/x-icon"> -->
     <link crossorigin="anonymous" href=
     "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity=
     "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>
-      Make New Quads
+      Play Quadagories!
     </title>
-    <script>
-    document.getElementById("fact").addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-          document.getElementById("submit").click();
-        }
-    });
-
-    function submit(){
-      var clue1 = document.getElementById("clue1").value;
-      var clue2 = document.getElementById("clue2").value;
-      var clue3 = document.getElementById("clue3").value;
-      var clue4 = document.getElementById("clue4").value;
-      var quad = document.getElementById("quad").value;
-      var fact = document.getElementById("fact").value;
-
-
-      if (clue1 === "" || clue2 === "" || clue3 === "" || clue4 === "" || quad === "") {document.getElementById("error").innerHTML = "Something important is missing!";return;}
-
-      var output = "";
-
-      output = "\\listP{" + clue1 + "}{" + clue2 + "}{" + clue3 + "}{" + clue4 + "}\n" + "\\ansP{" + quad + "}{"  + fact + "}\n\n\n";
-
-      document.getElementById("generated").innerHTML += output;
-
-      document.getElementById("clue1").value = "";
-      document.getElementById("clue2").value = "";
-      document.getElementById("clue3").value = "";
-      document.getElementById("clue4").value = "";
-      document.getElementById("quad").value = "";
-      document.getElementById("fact").value = "";
-      document.getElementById("error").innerHTML = "";
-      document.getElementById("alert").innerHTML = "";
-
-
-    }
-
-    //    document.getElementById("btnCopy").addEventListener("click", function(){
-    //    var copyText = document.getElementById("generated");
-    //    copyText.select();
-    //    document.execCommand("Copy");
-    //    if (copyText.value === ""){
-    //      document.getElementById("alert").innerHTML = "Nothing to copy.";
-    //    } else{
-    //      document.getElementById("alert").innerHTML = "Copied to clipboard!";}
-    //    });
-
-    // document.getElementById("btnCopy").addEventListener("click", function(){
-
-
-    function textToClipboard(){
-    var text = document.getElementById("generated").value;
-    var dummy = document.createElement("textarea");
-    document.body.appendChild(dummy);
-    dummy.value = text;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
-    if (text === ""){
-        document.getElementById("alert").innerHTML = "Nothing to copy.";
-    } else{
-        document.getElementById("alert").innerHTML = "Copied to clipboard!";}
-    }
-
-
-    </script>
+   
   </head>
   <body>
-    <div id="main" style="text-align:center; position: relative;">
-      <h1>
-        Input Quadegory
-      </h1>
-
+    <div id="container">
+      
       <br>
 
-      <div id="form_container" style="width:350px; text-align:center; padding:10px;  margin-left: auto ; margin-right: auto ;">
-        <div style="background-color:lightgray; padding:5px; margin:5px; border-radius:5px ">
-        <h5>
-        Recommended Instructions:
-      </h5>
-      <ol style="text-align:left">
-        <li>Fill out form with new quads and click submit.</li>
-        <li>Repeat (1) 4 more times or until there are no more Quads to type.</li><li>Click "Click here to copy to clipboard."</li>
-        <li>Paste Quads to other document (email, word file, etc.).</li>
-        <li>Refresh this page.</li>
-        <li>Go back to (1) until there are no more Quads left to type.</li>
-        <li>Send other document (email, word doc, etc.) to Peter.</li>
-      </ol>
-          </div>
-        <br>
-        <input id="clue1" placeholder="Clue 1" style="width:100%;">
-        <br>
-        <input id="clue2" placeholder="Clue 2" style="width:100%;">
-        <br>
-        <input id="clue3" placeholder="Clue 3" style="width:100%;">
-        <br>
-        <input id="clue4" placeholder="Clue 4" style="width:100%;">
-        <br>
-        <br>
-        <input id="quad" placeholder="Quadegory" style="width:100%;">
-        <br>
-        <input id="fact" placeholder="Interesting Fact" style="width:100%;">
-        <br>
-        <br>
-        <button id="submit" onclick="submit()" style=
-        "width:100%;">Submit</button>
-        <p id="error" style="color:red">
-          <span style="color:white">|</span>
-        </p>
-
-        <h3>
-          Generated Quadegories:
-        </h3>
-
-        <textarea disabled id="generated" style=
-        "width:100%; height:200px;" disabled>{{generated}}</textarea>
-        <br>
-        <br>
-        <button id="btnCopy" onclick="textToClipboard()" style=
-        "width:100%">Click here to copy to clipboard.</button>
-        <br>
-
-        <p id="alert">
-        </p>
-      </div>
     </div>
   </body>
 </html>
