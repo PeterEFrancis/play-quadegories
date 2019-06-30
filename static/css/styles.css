@@ -9,6 +9,7 @@ p {
 }
 .launch-game {
   background-color: grey;
+  border: 3pt grey;
 }
 .launch-game:hover {
   background-color: #e0bac3
