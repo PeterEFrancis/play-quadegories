@@ -1,8 +1,13 @@
 h1 {
-  font-size:60px;
+  font-size:60pt;
 }
-
+h2 {
+  font-size:40pt;
+}
+p {
+  font-size:16pt;
+}
 launch-gmae {
   width:100%;
-
+  background-color: lightblue;
 }
