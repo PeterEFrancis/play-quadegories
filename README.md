@@ -1,4 +1,4 @@
-#Play Quadagories!
+# Play Quadagories!
 
 Quadagories is a game developed by Brook Zelcer. He has multiple publications and is currently teaching at NVRHSOT.
 
