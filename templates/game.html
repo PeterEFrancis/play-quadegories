@@ -32,9 +32,22 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-          <div>
+          <!-- <div>
             <h1>{{quad}}</h1>
             <h4>{{fact}}</h4>
+          </div> -->
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse1">Quadagory</a>
+                </h1>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">{{quad}}</div>
+                <div class="panel-footer">{{fact}}</div>
+              </div>
+            </div>
           </div>
           <br/>
           <div class="btn-group-vertical center-block">
