@@ -14,6 +14,6 @@ h2 {
 .launch-game:hover {
   background-color: black;
 }
-.launch-game:hover + #launch{
+.launch-game:hover > #launch{
   color: white;
 }
