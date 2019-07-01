@@ -10,12 +10,10 @@ def main():
     return render_template('index.html')
 
 
-# load in quadegoties.txt
-text_file = open("quadegories.txt", "r")
-lines = text_file.readlines()
-
+# read in quadegories.txt
 text = ''.join(line if line[0]=='\\' else '' for line in open("quadegories.txt", "r").readlines())
 quadegories = re.split('\\\\listP', text)[1:]
+# format text
 for i in range(len(quadegories)):
     # Split into quads and clues
     quadegories[i] = re.split('\\n\\\\ansP', quadegories[i])
@@ -25,14 +23,13 @@ for i in range(len(quadegories)):
     quadegories[i] = [re.sub('``', '&#8220', string) for string in quadegories[i][0] + quadegories[i][1]]
     # replace '
     quadegories[i] = [re.sub('`', '&#39', string) for string in quadegories[i]]
-    # replace bold statements    \\textbf{string} --> <strong>string</strong>
-
-    # replace italics statements    \\textit{string} --> <i>string</i>
-
-    # replace sc statements       \\textsc{string} --> <span style="font-variant:small-caps;">string</span>
-
-    # delete extra newlines \\
+    # delete \\
     quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
+    # replace bold statements    textbf{string} --> <strong>string</strong>
+
+    # replace italics statements    textit{string} --> <i>string</i>
+
+    # replace sc statements       textsc{string} --> <span style="font-variant:small-caps;">string</span>
 
 text_file.close()
 
