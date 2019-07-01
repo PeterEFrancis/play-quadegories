@@ -5,7 +5,7 @@
 \ansP{National Parks}{\textbf{Congaree} National Park, located in South Carolina, is home to enormous loblolly pines and several cyprus trees well over five hundred years old.}
 
 \listP{Autry}{Bonham}{Bowie}{Crockett}
-\ansP{Died at the Alamo}{James {\bf Bonham}, at age 29, is believed to have died while manning one of the canons in the interior of the Alamo chapel.}
+\ansP{Died at the Alamo}{James \textbf{Bonham}, at age 29, is believed to have died while manning one of the canons in the interior of the Alamo chapel.}
 
 \listP{The Nutbush}{Batusie}{Shim Sham}{Clogging}
 \ansP{Dances}{The \textbf{Batusie} was a go-go dance invented for the Batman television series.}
