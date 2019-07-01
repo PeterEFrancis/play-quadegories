@@ -31,8 +31,7 @@ for i in range(len(quadegories)):
 
     # replace sc statements       textsc{string} --> <span style="font-variant:small-caps;">string</span>
 
-text_file.close()
-
+    
 
 @app.route('/game')
 def game():
