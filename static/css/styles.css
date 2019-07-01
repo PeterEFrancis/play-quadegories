@@ -1,14 +1,21 @@
+
+/* CSS for templates */
+
+* {
+  font-size: 16pt;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 40pt;
 }
 h2 {
   font-size: 30pt;
 }
-* {
-  font-size: 16pt;
-}
+
 .launch-game {
   border: 1px solid black;
+  vertical-align: middle;
 }
 
 .launch-game:hover {
