@@ -3,7 +3,6 @@
 
 * {
   font-size: 16pt;
-  overflow: hidden;
 }
 
 h1 {
@@ -13,9 +12,12 @@ h2 {
   font-size: 30pt;
 }
 
+.hide-overflow{
+  overflow: hidden;
+}
+
 .launch-game {
   border: 1px solid black;
-  vertical-align: middle;
 }
 
 .launch-game:hover {
