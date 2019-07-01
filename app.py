@@ -39,7 +39,7 @@ text_file.close()
 
 @app.route('/game')
 def game():
-    [[clue4, clue3, clue2, clue1], [quad, fact]] = quadegories[random.randint(0,len(quadegories))]
+    [clue4, clue3, clue2, clue1, quad, fact] = quadegories[random.randint(0,len(quadegories))]
     return render_template('game.html', quad = quad, fact = fact, clue4 = clue4,
     clue3 = clue3, clue2 = clue2, clue1 = clue1)
 
