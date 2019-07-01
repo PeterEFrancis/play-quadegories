@@ -26,3 +26,9 @@ h2 {
 .launch-game:hover > #launch{
   color: white;
 }
+
+.clue {
+  width:100%;
+  font-size: 30pt;
+  border: 1px solid black;
+}
