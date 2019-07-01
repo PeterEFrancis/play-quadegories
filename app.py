@@ -32,7 +32,7 @@ for i in range(len(quadegories)):
     # replace sc statements       \\textsc{string} --> <span style="font-variant:small-caps;">string</span>
 
     # delete extra newlines \\
-    quadegories[i] = [re.sub('\\', '', string) for string in quadegories[i]]
+    quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
 
 text_file.close()
 
