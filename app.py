@@ -10,6 +10,20 @@ def main():
     return render_template('index.html')
 
 
+def format(string):
+    while re.search("{", string) is not None:
+        # find the first { and set the start of the string as the character index after
+        start = re.search("{", string).start() + 1
+        # find the next } and set the end of the string as that characte index
+        end = re.search("}", string).start() - 1
+        # while there is a { in between start and end, reset start
+        while re.search("{", string[start:end+1]) is not None:
+            start += re.search("{", string[start:end+1]).start() + 1
+        # replace the 6 characters before start with html and replace } with the closing html
+        string = string[:start-7] + {'bf':'<strong>', 'it':'<em>', 'sc':'<span style="font-variant:small-caps;">'}[string[start-3:start-1]] + string[start:end+1] + {'bf':'</strong>', 'it':'</em>', 'sc':'</span>'}[string[start-3:start-1]] + string[end+2:]
+    return string
+
+
 # read in quadegories.txt
 text = ''.join(line if line[0]=='\\' else '' for line in open("quadegories.txt", "r").readlines())
 quadegories = re.split('\\\\listP', text)[1:]
@@ -26,12 +40,10 @@ for i in range(len(quadegories)):
     # delete \\
     quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
     # replace bold statements    textbf{string} --> <strong>string</strong>
-
-    # replace italics statements    textit{string} --> <i>string</i>
-
+    # replace italics statements    textit{string} --> <em>string</em>
     # replace sc statements       textsc{string} --> <span style="font-variant:small-caps;">string</span>
+    quadegories[i] = [format(string) for string in quadegories[i]]
 
-    
 
 @app.route('/game')
 def game():
