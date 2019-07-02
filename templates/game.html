@@ -17,10 +17,12 @@
       <div class="row">
         <div class="col-md-12">
           <button type="button" class="btn" onclick="location.href='/';">
-            <span class="glyphicon glyphicon-home"></span><h5>Home</h5>
+            <span class="glyphicon glyphicon-home"></span>
+            <h5>Home</h5>
           </button>
           <button type="button" class="btn" onclick="location.href='/play';">
-            <span class="glyphicon glyphicon-refresh"></span><h5>New Quadegory</h5>
+            <span class="glyphicon glyphicon-refresh"></span>
+            <h5>New Quadegory</h5>
           </button>
         </div>
       </div>
@@ -33,7 +35,10 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h1 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse1">Quadagory</a>
+                  <a data-toggle="collapse" href="#collapse1" id="title"
+                     style="font-size: 20pt;">
+                    Quadagory
+                  </a>
                 </h1>
               </div>
               <div id="collapse1" class="panel-collapse collapse">
@@ -46,16 +51,25 @@
           <div class="btn-group-vertical center-block">
             <button type="button" class="btn clue" id="clue4"
                     onclick="this.innerHTML='{{clue4}}'; this.disabled=true;
-                    document.getElementById('clue3').disabled=false;">Clue #4
-                    </button>
+                    document.getElementById('clue3').disabled=false;
+                    document.getElementById('clue3').innerHTML =
+                    '&gt;&gt;&nbsp; Clue #3 &nbsp;&lt;&lt;'">
+                    &gt;&gt;&nbsp; Clue #4 &nbsp;&lt;&lt;</button>
+
             <button type="button" class="btn clue" id="clue3"
                     onclick="this.innerHTML='{{clue3}}'; this.disabled=true;
-                    document.getElementById('clue2').disabled=false;"
+                    document.getElementById('clue2').disabled=false;
+                    document.getElementById('clue2').innerHTML =
+                    '&gt;&gt;&nbsp; Clue #2 &nbsp;&lt;&lt;'"
                     disabled="true">Clue #3</button>
+
             <button type="button" class="btn clue" id="clue2"
                     onclick="this.innerHTML='{{clue2}}'; this.disabled=true;
-                    document.getElementById('clue1').disabled=false;"
+                    document.getElementById('clue1').disabled=false;
+                    document.getElementById('clue1').innerHTML =
+                    '&gt;&gt;&nbsp; Clue #1 &nbsp;&lt;&lt;'"
                     disabled="true">Clue #2</button>
+
             <button type="button" class="btn clue" id="clue1"
                     onclick="this.innerHTML='{{clue1}}'; this.disabled=true;"
                     disabled="true">Clue #1</button>
