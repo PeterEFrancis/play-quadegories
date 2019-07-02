@@ -1,12 +1,14 @@
 from flask import Flask, render_template, url_for
 import re
 import random
+import html
 
 
 app = Flask(__name__)
 
 @app.route('/')
-def main():
+@app.route('/index')
+def index():
     return render_template('index.html')
 
 
