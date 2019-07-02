@@ -50,7 +50,7 @@ for i in range(len(quadegories)):
 
 @app.route('/play')
 def play():
-    return redirect('/game/' + str(random.randint(0,len(quadegories))))
+    return redirect('/game/' + str(random.randint(0,len(quadegories)-1)))
 
 @app.route('/game/<int:choice>')
 def game(choice):
