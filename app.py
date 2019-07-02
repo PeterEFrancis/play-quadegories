@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 import re
 import random
 import html
@@ -22,7 +22,7 @@ def format(string):
         while re.search("{", string[start:end+1]) is not None:
             start += re.search("{", string[start:end+1]).start() + 1
         # replace the 6 characters before start with html and replace } with the closing html
-        string = string[:start-7] + {'bf':'<strong>', 'it':'<em>', 'sc':'<span style="font-variant:small-caps;">'}[string[start-3:start-1]] + string[start:end+1] + {'bf':'</strong>', 'it':'</em>', 'sc':'</span>'}[string[start-3:start-1]] + string[end+2:]
+        string = string[:start-7] + {'bf':html.unescape('\<') + 'strong>', 'it':'<em>', 'sc':'<span style="font-variant:small-caps;">'}[string[start-3:start-1]] + string[start:end+1] + {'bf':'</strong>', 'it':'</em>', 'sc':'</span>'}[string[start-3:start-1]] + string[end+2:]
     return string
 
 
@@ -36,9 +36,9 @@ for i in range(len(quadegories)):
     # remove braces
     quadegories[i] = [re.split('}{', quadegories[i][0][1:-1]), re.split('}{', quadegories[i][1][1:-2])]
     # replace `` and reformat to single lines
-    quadegories[i] = [re.sub('``', '&#8220', string) for string in quadegories[i][0] + quadegories[i][1]]
+    quadegories[i] = [re.sub('``', '&#8220;', string) for string in quadegories[i][0] + quadegories[i][1]]
     # replace '
-    quadegories[i] = [re.sub('`', '&#39', string) for string in quadegories[i]]
+    quadegories[i] = [re.sub('`', '&#39;', string) for string in quadegories[i]]
     # delete \\
     quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
     # replace bold statements    textbf{string} --> <strong>string</strong>
@@ -47,12 +47,15 @@ for i in range(len(quadegories)):
     quadegories[i] = [format(string) for string in quadegories[i]]
 
 
-@app.route('/game')
-def game():
-    [clue4, clue3, clue2, clue1, quad, fact] = quadegories[random.randint(0,len(quadegories))]
-    return render_template('game.html', quad = quad, fact = fact, clue4 = clue4,
-    clue3 = clue3, clue2 = clue2, clue1 = clue1)
+@app.route('/play')
+def play():
+    return redirect('/game/' + str(random.randint(0,len(quadegories))))
 
+@app.route('/game/<int:choice>')
+def game(choice):
+    [clue4, clue3, clue2, clue1, quad, fact] = quadegories[choice]
+    return render_template('game.html', quad = quad, fact = fact, clue4 = clue4,
+                                        clue3 = clue3, clue2 = clue2, clue1 = clue1)
 
 
 
