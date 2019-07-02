@@ -37,8 +37,7 @@ for i in range(len(quadegories)):
     quadegories[i] = [re.split('}{', quadegories[i][0][1:-1]), re.split('}{', quadegories[i][1][1:-2])]
     # replace `` and reformat to single lines
     quadegories[i] = [re.sub('``', '\"', string) for string in quadegories[i][0] + quadegories[i][1]]
-    # replace '' and reformat to single lines
-    quadegories[i] = [re.sub('\'\'', '\"', string) for string in quadegories[i][0] + quadegories[i][1]]
+    # replace ''
     # replace '
     quadegories[i] = [re.sub('`', '\'', string) for string in quadegories[i]]
     # delete \\
