@@ -36,9 +36,10 @@ for i in range(len(quadegories)):
     # remove braces
     quadegories[i] = [re.split('}{', quadegories[i][0][1:-1]), re.split('}{', quadegories[i][1][1:-2])]
     # replace `` and reformat to single lines
-    quadegories[i] = [re.sub('``', '&#8220;', string) for string in quadegories[i][0] + quadegories[i][1]]
+    quadegories[i] = [re.sub('``', '\"', string) for string in quadegories[i][0] + quadegories[i][1]]
+    # replace ''
     # replace '
-    quadegories[i] = [re.sub('`', '&#39;', string) for string in quadegories[i]]
+    quadegories[i] = [re.sub('`', '\'', string) for string in quadegories[i]]
     # delete \\
     quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
     # replace bold statements    textbf{string} --> <strong>string</strong>
