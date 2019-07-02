@@ -41,27 +41,28 @@
                 </h1>
               </div>
               <div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body"><h2>{{quad}}</h2></div>
+                <div class="panel-body" style="font-size:20pt" id="quad"></div>
                 <div class="panel-footer"><p style="font-size:12pt">{{fact}}</p></div>
               </div>
             </div>
           </div>
           <br/>
           <div class="btn-group-vertical center-block">
-            <input type="button" class="btn clue" value="Clue #4" id="clue4"
-                   onclick="this.value='{{clue4}}'; this.disabled=true;
-                   document.getElementById('clue3').disabled=false;"></input>
-            <input type="button" class="btn clue" value="Clue #3" id="clue3"
+            <button type="button" class="btn clue" id="clue4"
+                    onclick="this.innerHTML={{clue4}}; this.disabled=true;
+                    document.getElementById('clue3').disabled=false;">Clue #4
+                    </button>
+            <button type="button" class="btn clue" value="Clue #3" id="clue3"
                     onclick="this.value='{{clue3}}'; this.disabled=true;
                     document.getElementById('clue2').disabled=false;"
-                    disabled="true"></input>
-            <input type="button" class="btn clue" value="Clue #2" id="clue2"
-                   onclick="this.value='{{clue2}}'; this.disabled=true;
-                   document.getElementById('clue1').disabled=false;"
-                   disabled="true"></input>
-            <input type="button" class="btn clue" value="Clue #1" id="clue1"
-                   onclick="this.value='{{clue1}}'; this.disabled=true;"
-                   disabled="true"></input>
+                    disabled="true"></button>
+            <button type="button" class="btn clue" value="Clue #2" id="clue2"
+                    onclick="this.value='{{clue2}}'; this.disabled=true;
+                    document.getElementById('clue1').disabled=false;"
+                    disabled="true"></button>
+            <button type="button" class="btn clue" value="Clue #1" id="clue1"
+                    onclick="this.value='{{clue1}}'; this.disabled=true;"
+                    disabled="true"></button>
            </div>
         </div>
         <div class="col-md-3">
@@ -69,4 +70,8 @@
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}' + '</h2>'
+
+  </script>
 </html>
