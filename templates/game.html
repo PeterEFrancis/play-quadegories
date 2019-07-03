@@ -81,7 +81,7 @@
     </div>
   </body>
   <script>
-    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">") + '</h2>';
-    document.getElementById('fact').innerHTML = '<p>' + '{{fact}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">") + '</p>';
+    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","") + '</h2>';
+    document.getElementById('fact').innerHTML = '<p>' + '{{fact}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","") + '</p>';
   </script>
 </html>
