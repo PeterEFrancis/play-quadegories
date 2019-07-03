@@ -22,13 +22,7 @@ def format(string):
         while re.search("{", string[start:end+1]) is not None:
             start += re.search("{", string[start:end+1]).start() + 1
         # replace the 6 characters before start with html and replace } with the closing html
-        string = string[:start-7]
-                 + {'bf':'<strong style=\"font-size:inherit\">',
-                    'it':'<em style=\"font-size:inherit\">',
-                    'sc':'<span style=\"font-variant:small-caps; font-size:inherit;\">'}[string[start-3:start-1]]
-                 + string[start:end+1]
-                 + {'bf':'</strong>', 'it':'</em>', 'sc':'</span>'}[string[start-3:start-1]]
-                 + string[end+2:]
+        string = string[:start-7] + {'bf':'<strong style=\"font-size:inherit\">', 'it':'<em style=\"font-size:inherit\">', 'sc':'<span style=\"font-variant:small-caps; font-size:inherit;\">'}[string[start-3:start-1]] + string[start:end+1]+ {'bf':'</strong>', 'it':'</em>', 'sc':'</span>'}[string[start-3:start-1]]+ string[end+2:]
     return string
 
 
