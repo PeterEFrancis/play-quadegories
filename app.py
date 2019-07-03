@@ -33,7 +33,7 @@ def format(string):
 
 
 # read in quadegories.txt
-text = ''.join(line if line[0]=='\\' else '' for line in open("quadegories.txt", "r").readlines())
+text = ''.join(line if line[0]=='\\' else '' for line in open("quadegories/general.txt", "r").readlines())
 quadegories = re.split('\\\\listP', text)[1:]
 # format text
 for i in range(len(quadegories)):
