@@ -41,7 +41,7 @@ def format(string):
 
 def loadIn(collection):
     # read in quadegories.txt
-    text = ''.join(line if line[0]=='\\' else '' for line in open(f'quadegories/{collection}.txt', "r").readlines())
+    text = ''.join(line if line[0]=='\\' else '' for line in open(f'quadegories/{collection}.txt', 'r').readlines())
     quadegories = re.split('\\\\listP', text)[1:]
     # format text
     for i in range(len(quadegories)):
