@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, redirect
 import re
 import random
 import html
+import os
 
 
 app = Flask(__name__)
@@ -10,6 +11,14 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+
+@app.route('/choose-collection')
+def choose():
+    list = [os.fsdecode(file)[:-4] for file in os.listdir('quadegories')]
+    iterable = range(len(list))
+    return render_template('choose-collection.html', list=list, iterable=iterable)
+
 
 
 def format(string):

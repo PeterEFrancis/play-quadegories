@@ -8,29 +8,21 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="utf-8">
     <title>
-      Play Quadegories!
+      Choose Collection
     </title>
     <style>
 
       * {
         font-size: 16pt;
       }
-
       h1 {
         font-size: 35pt;
       }
       h2 {
         font-size: 30pt;
       }
-
       .hide-overflow{
         overflow: hidden;
-      }
-
-      .clue {
-        width:100%;
-        font-size: 20pt;
-        border: 1px solid black;
       }
 
     </style>
@@ -43,73 +35,34 @@
             <span class="glyphicon glyphicon-home"></span>
             <h5>Home</h5>
           </button>
-          <button type="button" class="btn" onclick="location.href='../';">
-            <span class="glyphicon glyphicon-refresh"></span>
-            <h5>New Quadegory</h5>
-          </button>
-          <button type="button" class="btn" onclick="location.href='/play';">
-            <span class="glyphicon glyphicon-th-list"></span>
-            <h5>New Collection</h5>
-          </button>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-          <h2 class="text-center" style="text-transform: capitalize;"> The {{collection}} Collection</h2>
+          <h2 class="text-center" style="text-transform: capitalize;"> Choose Collection</h2>
           <br/>
-          <div class="panel-group">
+          <div class="panel-group" id="accordion">
+          {% for i in iterable %}
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse1" id="title"
-                     style="font-size: 20pt;">
-                    Quadegory
-                  </a>
-                </h1>
+                <h4 class="panel-title">
+                  <!-- data-toggle="collapse" data-parent="#accordion" -->
+                  <a href="/game/{{list[i]}}" style="text-transform: capitalize;">
+                  {{ list[i] }}</a> <!-- #collapse{{i}} -->
+                </h4>
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body" style="font-size:20pt" id="quad"></div>
-                <div class="panel-footer" style="font-size:12pt" id="fact"></div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <!-- <div class="panel-body"></div> -->
               </div>
             </div>
+          {% endfor %}
           </div>
-          <br/>
-          <div class="btn-group-vertical center-block">
-            <button type="button" class="btn clue" id="clue4"
-                    onclick="this.innerHTML='{{clue4}}'; this.disabled=true;
-                    document.getElementById('clue3').disabled=false;
-                    document.getElementById('clue3').innerHTML =
-                    '&gt;&gt;&nbsp; Clue #3 &nbsp;&lt;&lt;'">
-                    &gt;&gt;&nbsp; Clue #4 &nbsp;&lt;&lt;</button>
-
-            <button type="button" class="btn clue" id="clue3"
-                    onclick="this.innerHTML='{{clue3}}'; this.disabled=true;
-                    document.getElementById('clue2').disabled=false;
-                    document.getElementById('clue2').innerHTML =
-                    '&gt;&gt;&nbsp; Clue #2 &nbsp;&lt;&lt;'"
-                    disabled="true">Clue #3</button>
-
-            <button type="button" class="btn clue" id="clue2"
-                    onclick="this.innerHTML='{{clue2}}'; this.disabled=true;
-                    document.getElementById('clue1').disabled=false;
-                    document.getElementById('clue1').innerHTML =
-                    '&gt;&gt;&nbsp; Clue #1 &nbsp;&lt;&lt;'"
-                    disabled="true">Clue #2</button>
-
-            <button type="button" class="btn clue" id="clue1"
-                    onclick="this.innerHTML='{{clue1}}'; this.disabled=true;"
-                    disabled="true">Clue #1</button>
-           </div>
         </div>
-        <div class="col-md-3">
-        </div>
+        <div class="col-md-3"></div>
       </div>
     </div>
   </body>
-  <script>
-    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","") + '</h2>';
-    document.getElementById('fact').innerHTML = '<p>' + '{{fact}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","") + '</p>';
-  </script>
+  <script></script>
 </html>
