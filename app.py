@@ -71,6 +71,7 @@ def auto():
     return redirect('/game/general/1')
 
 
+@app.route('/game/<string:collection>/')
 @app.route('/game/<string:collection>')
 def chooseRand(collection):
     quadegories = loadIn(collection)
