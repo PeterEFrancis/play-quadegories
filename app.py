@@ -38,11 +38,11 @@ def loadIn(collection):
         # remove braces
         quadegories[i] = [re.split('}{', quadegories[i][0][1:-1]), re.split('}{', quadegories[i][1][1:-2])]
         # replace `` and reformat to single lines
-        quadegories[i] = [re.sub('``', '\"', string) for string in quadegories[i][0] + quadegories[i][1]]
+        quadegories[i] = [re.sub('``', '\\\\"', string) for string in quadegories[i][0] + quadegories[i][1]]
         # replace ''
             # ?
         # replace '
-        quadegories[i] = [re.sub('`', '\'', string) for string in quadegories[i]]
+        quadegories[i] = [re.sub('`', "\\'", string) for string in quadegories[i]]
         # delete \\
         quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
         # replace bold statements    textbf{string} --> <strong>string</strong>
@@ -59,17 +59,17 @@ def auto():
     return redirect('/game/general/1')
 
 
-@app.route('/game/<string:category>')
+@app.route('/game/<string:collection>')
 def chooseRand(collection):
     quadegories = loadIn(collection)
     return redirect(f'/game/{collection}/' + str(random.randint(0,len(quadegories)-1)))
 
 
-@app.route('/game/<string:category>/<int:choice>')
+@app.route('/game/<string:collection>/<int:choice>')
 def game(collection, choice):
     quadegories = loadIn(collection)
     [clue4, clue3, clue2, clue1, quad, fact] = quadegories[choice]
-    return render_template('game.html', category = category, quad = quad,
+    return render_template('game.html', collection = collection, quad = quad,
                                         fact = fact, clue4 = clue4,
                                         clue3 = clue3, clue2 = clue2,
                                         clue1 = clue1)

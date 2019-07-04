@@ -5,14 +5,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="https://raw.githubusercontent.com/francisp336/play-quadegories/master/css/static/styles.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="utf-8">
     <title>
       Play Quadegories!
     </title>
     <style>
-      
+
       * {
         font-size: 16pt;
       }
@@ -44,9 +43,13 @@
             <span class="glyphicon glyphicon-home"></span>
             <h5>Home</h5>
           </button>
-          <button type="button" class="btn" onclick="location.href='/play';">
+          <button type="button" class="btn" onclick="location.href='/game/{{collection}}';">
             <span class="glyphicon glyphicon-refresh"></span>
             <h5>New Quadegory</h5>
+          </button>
+          <button type="button" class="btn" onclick="location.href='/choose-collection';">
+            <span class="glyphicon glyphicon-th-list"></span>
+            <h5>New Collection</h5>
           </button>
         </div>
       </div>
@@ -54,11 +57,12 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
+          <h2 class="text-center" style="text-transform: capitalize;"> The {{collection}} Collection</h2>
           <br/>
           <div class="panel-group">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h1 class="panel-title">
+                <h3 class="panel-title">
                   <a data-toggle="collapse" href="#collapse1" id="title"
                      style="font-size: 20pt;">
                     Quadegory
@@ -73,30 +77,17 @@
           </div>
           <br/>
           <div class="btn-group-vertical center-block">
-            <button type="button" class="btn clue" id="clue4"
-                    onclick="this.innerHTML='{{clue4}}'; this.disabled=true;
-                    document.getElementById('clue3').disabled=false;
-                    document.getElementById('clue3').innerHTML =
-                    '&gt;&gt;&nbsp; Clue #3 &nbsp;&lt;&lt;'">
-                    &gt;&gt;&nbsp; Clue #4 &nbsp;&lt;&lt;</button>
+            <button type="button" class="btn clue" id="clue4" onclick="clue4()">
+              &gt;&gt;&nbsp; Clue #4 &nbsp;&lt;&lt;</button>
 
             <button type="button" class="btn clue" id="clue3"
-                    onclick="this.innerHTML='{{clue3}}'; this.disabled=true;
-                    document.getElementById('clue2').disabled=false;
-                    document.getElementById('clue2').innerHTML =
-                    '&gt;&gt;&nbsp; Clue #2 &nbsp;&lt;&lt;'"
-                    disabled="true">Clue #3</button>
+                    onclick="clue3()" disabled="true">Clue #3</button>
 
             <button type="button" class="btn clue" id="clue2"
-                    onclick="this.innerHTML='{{clue2}}'; this.disabled=true;
-                    document.getElementById('clue1').disabled=false;
-                    document.getElementById('clue1').innerHTML =
-                    '&gt;&gt;&nbsp; Clue #1 &nbsp;&lt;&lt;'"
-                    disabled="true">Clue #2</button>
+                    onclick="clue2()" disabled="true">Clue #2</button>
 
             <button type="button" class="btn clue" id="clue1"
-                    onclick="this.innerHTML='{{clue1}}'; this.disabled=true;"
-                    disabled="true">Clue #1</button>
+                    onclick="clue1()" disabled="true">Clue #1</button>
            </div>
         </div>
         <div class="col-md-3">
@@ -105,7 +96,34 @@
     </div>
   </body>
   <script>
-    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","") + '</h2>';
-    document.getElementById('fact').innerHTML = '<p>' + '{{fact}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","") + '</p>';
+    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","").replace(/&#39;/g,"'") + '</h2>';
+    document.getElementById('fact').innerHTML = '<p>' + '{{fact}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","").replace(/&#39;/g,"'") + '</p>';
+
+    function clue4() {
+      document.getElementById('clue4').innerHTML="{{ clue4 }}";
+      document.getElementById('clue4').disabled=true;
+      document.getElementById('clue3').disabled=false;
+      document.getElementById('clue3').innerHTML = '&gt;&gt;&nbsp; Clue #3 &nbsp;&lt;&lt;'
+    };
+
+    function clue3() {
+      document.getElementById('clue3').innerHTML="{{ clue3 }}";
+      document.getElementById('clue3').disabled=true;
+      document.getElementById('clue2').disabled=false;
+      document.getElementById('clue2').innerHTML = '&gt;&gt;&nbsp; Clue #2 &nbsp;&lt;&lt;'
+    };
+
+    function clue2() {
+      document.getElementById('clue2').innerHTML="{{ clue2 }}";
+      document.getElementById('clue2').disabled=true;
+      document.getElementById('clue1').disabled=false;
+      document.getElementById('clue1').innerHTML = '&gt;&gt;&nbsp; Clue #1 &nbsp;&lt;&lt;'
+    };
+
+    function clue1() {
+      document.getElementById('clue1').innerHTML="{{ clue1 }}";
+      document.getElementById('clue1').disabled=true;
+    };
+
   </script>
 </html>
