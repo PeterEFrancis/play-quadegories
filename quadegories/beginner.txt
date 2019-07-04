@@ -1,0 +1,17 @@
+\listP{Bugles}{Tostitos}{Lay's}{Doritos}
+\ansP{Types of Chips}{Potato chips are American's favorite snack food.}
+
+\listP{Hulu}{Netflix}{YouTube}{Amazon Prime Video}
+\ansP{Types of Streaming Services}{Netflix has over 70 Million users.}
+
+\listP{Cookies}{Cake}{Brownies}{Ice Cream}
+\ansP{Types of Desserts}{The world’s largest wedding cake weighed 15,032 lb and was made by chefs at the Mohegan Sun Hotel and Casino, Uncasville, CT in February 2004.}
+
+\listP{Pool}{Baseball}{Basketball}{Tennis}
+\ansP{Types of Sports}{James Naismith, a teacher at a YMCA in Springfield, Massachusetts, is credited with inventing basketball in 1891}
+
+\listP{LG}{Microsoft}{Samsung}{Apple}
+\ansP{Different Technology Companies}{The name 'Apple' came from founder Steve Jobs' like of the fruit}
+
+\listP{Sleepy}{Grumpy}{Bashful}{Doc}
+\ansP{Dwarf Names}{Snow White and the 7 Dwarfs was the first full length movie from Walt Disney Studios.}
