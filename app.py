@@ -27,21 +27,9 @@ def format(string):
 
 
 
-
-@app.route('/play')
-def play():
-    return redirect('/game/' + str(random.randint(0,len(quadegories)-1)))
-
-
-@app.route('/game')
-def auto():
-    return redirect('/game/general/1')
-
-
-@app.route('/game/<string:catagory>/<int:choice>')
-def game(catagory, choice):
+def loadIn(collection):
     # read in quadegories.txt
-    text = ''.join(line if line[0]=='\\' else '' for line in open(f"quadegories/{catagory}.txt", "r").readlines())
+    text = ''.join(line if line[0]=='\\' else '' for line in open(f'quadegories/{collection}.txt', "r").readlines())
     quadegories = re.split('\\\\listP', text)[1:]
     # format text
     for i in range(len(quadegories)):
@@ -52,6 +40,7 @@ def game(catagory, choice):
         # replace `` and reformat to single lines
         quadegories[i] = [re.sub('``', '\"', string) for string in quadegories[i][0] + quadegories[i][1]]
         # replace ''
+            # ?
         # replace '
         quadegories[i] = [re.sub('`', '\'', string) for string in quadegories[i]]
         # delete \\
@@ -60,9 +49,30 @@ def game(catagory, choice):
         # replace italics statements    textit{string} --> <em>string</em>
         # replace sc statements       textsc{string} --> <span style="font-variant:small-caps;">string</span>
         quadegories[i] = [format(string) for string in quadegories[i]]
+    return quadegories
+
+
+
+
+@app.route('/game')
+def auto():
+    return redirect('/game/general/1')
+
+
+@app.route('/game/<string:category>')
+def chooseRand(collection):
+    quadegories = loadIn(collection)
+    return redirect(f'/game/{collection}/' + str(random.randint(0,len(quadegories)-1)))
+
+
+@app.route('/game/<string:category>/<int:choice>')
+def game(collection, choice):
+    quadegories = loadIn(collection)
     [clue4, clue3, clue2, clue1, quad, fact] = quadegories[choice]
-    return render_template('game.html', quad = quad, fact = fact, clue4 = clue4,
-                                        clue3 = clue3, clue2 = clue2, clue1 = clue1)
+    return render_template('game.html', category = category, quad = quad,
+                                        fact = fact, clue4 = clue4,
+                                        clue3 = clue3, clue2 = clue2,
+                                        clue1 = clue1)
 
 
 

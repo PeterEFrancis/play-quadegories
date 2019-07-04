@@ -39,6 +39,41 @@
         color: white;
       }
 
+
+      /* For the Footer */
+
+      #footer {
+        background-color:rgb(244,243,243);
+        padding-top:20px;
+      }
+
+      #footer ul {
+          list-style-type: none;
+          padding-left: 0;
+          line-height: 1.7;
+      }
+
+      #footer h5 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 30px;
+          color:black;
+      }
+
+      #footer a {
+          line-height: 14px;
+          text-decoration: none;
+          color: black;
+          font-size: 12px;
+      }
+
+      #footer a:hover,
+      #footer a:focus {
+          font-weight: bold;
+          text-decoration: none;
+      }
+
+
     </style>
   </head>
   <body>
@@ -51,12 +86,9 @@
             <h1 class="text-center">Play Quadegories!</h1>
           </div>
           <button type="button" class="btn launch-game center-block"
-                  onclick="location.href='/play';">
+                  onclick="location.href='/choose-category';">
             <h2 class="text-center" id="launch">Launch Game</h2>
           </button>
-          <br/>
-          <img src={{ url_for('static', filename='logo.png') }}
-               class="center-block" style="width:40px"/>
           <br/>
           <div class="panel-group" id="accordion">
             <div class="panel panel-default">
@@ -180,6 +212,43 @@
 
       <br>
 
+    </div>
+    <div class="container-fluid" id="footer">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+          <img src={{ url_for('static', filename='logo.png') }}
+               style="width:100px;padding-top:30px;"/>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+          <h5>More Information</h5>
+          <ul>
+            <li>
+              <a href="https://github.com/francisp336/play-quadegories">
+                GitHub Repository
+              </a>
+            </li>
+            <li>
+              <a href="http://www.lulu.com/shop/brook-zelcer/quadegories/paperback/product-23884928.html">
+                Buy the Book!
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" style="padding-top:30px;">
+          <p class="text-center" style="font-size:10px">&copy; 2019</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
