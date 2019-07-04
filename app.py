@@ -15,7 +15,10 @@ def index():
 
 @app.route('/choose-collection')
 def choose():
-    list = [os.fsdecode(file)[:-4] for file in os.listdir('quadegories')]
+    list = []
+    for file in os.listdir('quadegories'):
+        if os.fsdecode(file).endswith('.txt'):
+            list += [os.fsdecode(file)[:-4]]
     iterable = range(len(list))
     return render_template('choose-collection.html', list=list, iterable=iterable)
 
