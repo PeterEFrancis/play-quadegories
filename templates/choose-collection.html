@@ -14,7 +14,7 @@
       @import url('https://fonts.googleapis.com/css?family=Puritan&display=swap');
 
       * {
-        font-family: 'Puritan';
+        font-family: 'Puritan', sans-serif;
         font-size: 16pt;
       }
       h1 {
@@ -46,13 +46,13 @@
           <h2 class="text-center" style="text-transform: capitalize;">Choose Collection</h2>
           <br/>
           <div class="panel-group" id="accordion">
-          {% for i in iterable %}
+          {% for key in collectionDict%}
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <!-- data-toggle="collapse" data-parent="#accordion" -->
-                  <a href="/game/{{list[i]}}" style="text-transform: capitalize;">
-                  {{ list[i] }}</a> <!-- #collapse{{i}} -->
+                  <a href="/game/{{ key }}" style="text-transform: capitalize;">
+                  {{ key }}</a> <!-- #collapse{{i}} -->
                 </h4>
               </div>
               <div id="collapse1" class="panel-collapse collapse in">

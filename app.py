@@ -13,17 +13,6 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/choose-collection')
-def choose():
-    list = []
-    for file in os.listdir('quadegories'):
-        if os.fsdecode(file).endswith('.txt'):
-            list += [os.fsdecode(file)[:-4]]
-    iterable = range(len(list))
-    return render_template('choose-collection.html', list=list, iterable=iterable)
-
-
-
 def format(string):
     while re.search("{", string) is not None:
         # find the first { and set the start of the string as the character index after
@@ -34,14 +23,21 @@ def format(string):
         while re.search("{", string[start:end+1]) is not None:
             start += re.search("{", string[start:end+1]).start() + 1
         # replace the 6 characters before start with html and replace } with the closing html
-        string = string[:start-7] + {'bf':'<strong style=\"font-size:inherit\">', 'it':'<em style=\"font-size:inherit\">', 'sc':'<span style=\"font-variant:small-caps; font-size:inherit;\">'}[string[start-3:start-1]] + string[start:end+1]+ {'bf':'</strong>', 'it':'</em>', 'sc':'</span>'}[string[start-3:start-1]]+ string[end+2:]
+        front = {
+            'bf':'<strong style=\"font-size:inherit\">',
+            'it':'<em style=\"font-size:inherit\">',
+            'sc':'<span style=\"font-variant:small-caps; font-size:inherit;\">'
+        }
+        back = {
+            'bf':'</strong>',
+            'it':'</em>',
+            'sc':'</span>'
+        }
+        string = string[:start-7] + front[string[start-3:start-1]] + string[start:end+1]+ back[string[start-3:start-1]]+ string[end+2:]
     return string
 
-
-
 def loadIn(collection):
-    # read in quadegories.txt
-    text = ''.join(line if line[0]=='\\' else '' for line in open(f'quadegories/{collection}.txt', 'r').readlines())
+    text = ''.join(line if line[0]=='\\' else '' for line in open(f'quadegories/{collection}', 'r').readlines())
     quadegories = re.split('\\\\listP', text)[1:]
     # format text
     for i in range(len(quadegories)):
@@ -65,6 +61,19 @@ def loadIn(collection):
 
 
 
+# load in all collection files
+collectionDict = {}
+for file in os.listdir('quadegories'):
+    if os.fsdecode(file).endswith('.txt'):
+        collectionDict[os.fsdecode(file)[:-4]] = loadIn(file)
+
+
+@app.route('/choose-collection')
+def choose():
+    global collectionDict
+    return render_template('choose-collection.html', collectionDict=collectionDict)
+
+
 
 @app.route('/game')
 def auto():
@@ -74,19 +83,20 @@ def auto():
 @app.route('/game/<string:collection>/')
 @app.route('/game/<string:collection>')
 def chooseRand(collection):
-    quadegories = loadIn(collection)
+    global collectionDict
+    quadegories = collectionDict[collection]
     return redirect(f'/game/{collection}/' + str(random.randint(0,len(quadegories)-1)))
 
 
 @app.route('/game/<string:collection>/<int:choice>')
 def game(collection, choice):
-    quadegories = loadIn(collection)
+    global collectionDict
+    quadegories = collectionDict[collection]
     [clue4, clue3, clue2, clue1, quad, fact] = quadegories[choice]
     return render_template('game.html', collection = collection, quad = quad,
                                         fact = fact, clue4 = clue4,
                                         clue3 = clue3, clue2 = clue2,
                                         clue1 = clue1)
-
 
 
 if __name__ == "__main__":
