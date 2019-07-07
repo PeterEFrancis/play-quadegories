@@ -14,13 +14,14 @@
       @import url('https://fonts.googleapis.com/css?family=Puritan&display=swap');
 
       * {
-        font-family: 'Puritan';
+        font-family: 'Puritan', sans-serif;
         font-size: 16pt;
       }
 
       h1 {
         font-size: 35pt;
       }
+
       h2 {
         font-size: 30pt;
       }
@@ -45,15 +46,18 @@
             <span class="glyphicon glyphicon-home"></span>
             <h5> Go<br>Home</h5>
           </button>
-          <button type="button" class="btn" onclick="location.href='/game/{{collection}}';">
+          <button type="button" class="btn"
+                  onclick="location.href='/game/{{collection}}';">
             <span class="glyphicon glyphicon-refresh"></span>
             <h5>New<br/> Quadegory</h5>
           </button>
-          <button type="button" class="btn" onclick="location.href='/choose-collection';">
+          <button type="button" class="btn"
+                  onclick="location.href='/choose-collection';">
             <span class="glyphicon glyphicon-th-list"></span>
             <h5>Choose<br/>Collection</h5>
           </button>
-          <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+          <button type="button" class="btn" data-toggle="modal"
+                  data-target="#myModal">
             <span class="glyphicon glyphicon-info-sign"></span>
             <h5>Game<br>Info</h5>
           </button>
@@ -122,32 +126,36 @@
     </div>
   </body>
   <script>
-    document.getElementById('quad').innerHTML = '<h2>' + '{{quad}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","").replace(/&#39;/g,"'") + '</h2>';
-    document.getElementById('fact').innerHTML = '<p>' + '{{fact}}'.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","").replace(/&#39;/g,"'") + '</p>';
+    document.getElementById('quad').innerHTML = '<h2>' + toHTML('{{quad}}') + '</h2>';
+    document.getElementById('fact').innerHTML = '<p>' + toHTML('{{fact}}') + '</p>';
+
+    function toHTML(string) {
+      return string.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&#34/g,"\"").replace("&quot;","").replace(/&#39;/g,"'");
+    }
 
     function clue4() {
-      document.getElementById('clue4').innerHTML="{{ clue4 }}";
+      document.getElementById('clue4').innerHTML=toHTML("{{ clue4 }}");
       document.getElementById('clue4').disabled=true;
       document.getElementById('clue3').disabled=false;
       document.getElementById('clue3').innerHTML = '&gt;&gt;&nbsp; Clue #3 &nbsp;&lt;&lt;'
     };
 
     function clue3() {
-      document.getElementById('clue3').innerHTML="{{ clue3 }}";
+      document.getElementById('clue3').innerHTML=toHTML("{{ clue3 }}");
       document.getElementById('clue3').disabled=true;
       document.getElementById('clue2').disabled=false;
       document.getElementById('clue2').innerHTML = '&gt;&gt;&nbsp; Clue #2 &nbsp;&lt;&lt;'
     };
 
     function clue2() {
-      document.getElementById('clue2').innerHTML="{{ clue2 }}";
+      document.getElementById('clue2').innerHTML= toHTML("{{ clue2 }}");
       document.getElementById('clue2').disabled=true;
       document.getElementById('clue1').disabled=false;
       document.getElementById('clue1').innerHTML = '&gt;&gt;&nbsp; Clue #1 &nbsp;&lt;&lt;'
     };
 
     function clue1() {
-      document.getElementById('clue1').innerHTML="{{ clue1 }}";
+      document.getElementById('clue1').innerHTML=toHTML("{{ clue1 }}");
       document.getElementById('clue1').disabled=true;
     };
 
