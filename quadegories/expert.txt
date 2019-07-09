@@ -492,181 +492,190 @@
 \ansP{US Silver Dollars}{Other US Silver Dollars are the Flowing Hair and Peace.}
 
 \listP{Peechi}{Three Gorges}{Hoover}{Grand Coulee}
-\ansP{Dams}{India's Peechi Dam is renowned as a beautiful spot for a peaceful stroll }
+\ansP{Dams}{India's \textbf{Peechi} Dam is renowned as a beautiful spot for a peaceful stroll }
 
 \listP{Ulysses}{Leavenworth}{Lawrence}{Witchita}
 \ansP{Places in Kansas}{Jim Thorpe, James Naismith and Jim Ryun all hail from Lawrence, Kansas.}
 
 \listP{Sun Moo}{Lucian Freud}{N. C. Wyeth}{Pierre Auguste Renoir}
-\ansP{Painters}{Fourteen of painter Lucian Freud's children have been identified, two from his first marriage and twelve by various mistresses.}
+\ansP{Painters}{Fourteen of painter \textbf{Lucian Freud}'s children have been identified, two from his first marriage and twelve by various mistresses.}
 
 \listP{Warren Jensen}{Woogie}{Brett Favre}{Mary Jensen}
-\ansP{Characters in Something About Mary}{Chris Elliott played Dom "Woogie" Woganowski, one of several characters who is obsessed with Mary.}
+\ansP{Characters in Something About Mary}{Chris Elliott played Dom ``\textbf{Woogie}'' Woganowski, one of several characters who is obsessed with Mary.}
+
 
 \listP{Tomorrowland}{Super Bock Super Rock}{Cannes}{Mardi Gras}
-\ansP{Festivals}{Super Bock Super Rock is a rock festival in Portugal created in 1994.}
+\ansP{Festivals}{\textbf{Super Bock Super Rock} is a rock festival in Portugal created in 1994.}
 
-\listP{Strange}{Pepper}{Strangelove}{My Eyes}
-\ansP{Doctor}{"Doctor My Eyes" is a 1972 song written and performed by Jackson Browne.}
 
 \listP{Water}{Heart}{Husk}{Shell}
-\ansP{Parts of a Coconut}{One of the earliest recorded references to a coconut occurs in the story of Sinbad in "One Thousand and One Nights".}
+\ansP{Parts of a Coconut}{One of the earliest recorded references to a coconut occurs in the story of Sinbad in ``One Thousand and One Nights''.}
+
 
 \listP{Mancini}{Kroc}{Wallston}{Robinson}
-\ansP{Ray}{Ray Wallston appeared in numerous films, including South Pacific, The Sting and Of Mice and Men}
+\ansP{Ray}{Ray \textbf{Wallston} appeared in numerous films, including South Pacific, The Sting and Of Mice and Men}
+
 
 \listP{Flame}{Golden}{Thompson Seedless}{Muscat}
-\ansP{Raisins}{Muscats are larger and sweeter in comparison to other grape varieties.}
+\ansP{Raisins}{\textbf{Muscats} are larger and sweeter in comparison to other grape varieties.}
 
 \listP{Anna}{Sexes}{Eve}{Kayak}
-\ansP{Palindromes}{"Was it a car or a cat I saw?" and "A man, a plan, a canal, Panama!"are also palindromes.}
+\ansP{Palindromes}{``Was it a car or a cat I saw?'' and ``A man, a plan, a canal, Panama!'' are also palindromes.}
+
 
 \listP{The Bible}{Beloved}{1984}{Lolita}
-\ansP{Banned Books}{Published in the U.S. in 1958, Lolita became the first book since Gone with the Wind to sell 100,000 copies in its first three weeks.}
+\ansP{Banned Books}{Published in the U.S. in 1958, \textit{Lolita} became the first book since \textit{Gone with the Wind} to sell 100,000 copies in its first three weeks.}
+
 
 \listP{Sha-na-na}{Edgar Winter}{Janis Joplin}{Jimi Hendrix}
 \ansP{Woodstock Performers}{All four of the Woodstock organizers were in their 20's.}
 
-\listP{Byzantium}{Twilight}{Bloodsucking Bastards}{Love at First Bite}
-\ansP{Vampire Movies}{In Bloodsucking Bastards, a down on his luck cubicle worker and his slacker best friend discover their new boss is a vampire.}
 
-\listP{Ferdinand the Faithful}{The Girl Without Hands}{Rapunzel}{Cinderella}
+\listP{\textit{Byzantium}}{\textit{Twilight}}{\textit{Bloodsucking Bastards}}{\textit{Love at First Bite}}
+\ansP{Vampire Movies}{In \textit{Bloodsucking Bastards}, a down on his luck cubicle worker and his slacker best friend discover their new boss is a vampire.}
+
+
+\listP{``Ferdinand the Faithful''}{``The Girl Without Hands''}{``Rapunzel''}{``Cinderella''}
 \ansP{Characters in Grimm's Fairy Tales}{When the Devil threatens to take a miller's soul unless the miller agrees to chop off his daughter's hands, the miller does so.}
 
 \listP{Bust}{Crash Ball}{Mulligrubber}{Banana Kick}
-\ansP{Rugby Terms}{A mulligrubber is a kick directed towards the ground and forced to bounce.}
+\ansP{Rugby Terms}{A \textbf{mulligrubber} is a kick directed towards the ground and forced to bounce.}
+
 
 \listP{Benbecula}{Kirkbean}{Aberdeen}{Inverness}
-\ansP{Places in Scotland}{Benbecula is an island in the Outer Hebrides in the Atlantic Ocean off the west coast of Scotland.}
+\ansP{Places in Scotland}{\textbf{Benbecula} is an island in the Outer Hebrides in the Atlantic Ocean off the west coast of Scotland.}
+
 
 \listP{Price}{Wunderlich}{Domingo}{Pavarotti}
-\ansP{Opera Singers}{Mary Violet Leontyne Price's mother was a midwife with a beautiful singing voice.  }
+\ansP{Opera Singers}{Mary Violet Leontyne Price's mother was a midwife with a beautiful singing voice.}
+
 
 \listP{Capp}{Segar}{Crumb}{Schulz}
-\ansP{Cartoonists}{Elsie Crisler Segar was the creator of Popeye, who first appeared in the comic strip "Thimble Theater" in 1929.}
+\ansP{Cartoonists}{Elsie Crisler \textbf{Segar} was the creator of Popeye, who first appeared in the comic strip ``Thimble Theater'' in 1929.}
+
 
 \listP{Red}{Silver Skin}{Pearl}{Vidalia}
-\ansP{Onions}{One medium-sized raw onion contains about forty five calories. }
+\ansP{Onions}{One medium-sized raw onion contains about forty five calories.}
 
 \listP{Ponder}{Affirm}{Giacomo}{Whirlaway}
-\ansP{Kentucky Derby Winners}{1949 Kentucky Derby winner Ponder sired Needles, who won the Derby in 1956.}
+\ansP{Kentucky Derby Winners}{1949 Kentucky Derby winner \textbf{Ponder} sired Needles, who won the Derby in 1956.}
 
 \listP{Goldie Gates}{The Emperor of America}{Brainiac}{Mister Mxyzptlk}
-\ansP{Enemies of Superman}{Brainiac, one of Superman's most formidable foes, hails from the planet Colu.  }
+\ansP{Enemies of Superman}{Brainiac, one of Superman's most formidable foes, hails from the planet Colu.}
 
-\listP{Lifeboat Drill}{Suddenly, Last Summer}{Sweet Bird of Youth}{The Night of the Iguana}
-\ansP{Plays by Tennessee Williams}{Lifeboat Drill is a one-act play written in 1979.}
+\listP{\textit{Lifeboat Drill}}{\textit{Suddenly, Last Summer}}{\textit{Sweet Bird of Youth}}{\textit{The Night of the Iguana}}
+\ansP{Plays by Tennessee Williams}{\textbf{Lifeboat Drill} is a one-act play written in 1979.}
 
 \listP{Oak Grove}{Ezra Church}{The Wilderness}{Harper's Ferry}
-\ansP{Civil War Battles}{There was no clear winner in the Battle of the Wilderness, an area of Virginia that is typified by tangled brush and thick woods.}
+\ansP{Civil War Battles}{There was no clear winner in the Battle of \textbf{the Wilderness}, an area of Virginia that is typified by tangled brush and thick woods.}
 
 \listP{Dakadak}{Catalina Wine Mixer}{Pork Chop}{Whirly Bird}
-\ansP{Slang for Helicopter}{A Dakadak is a large attack helicopter.}
+\ansP{Slang for Helicopter}{A \textbf{Dakadak} is a large attack helicopter.}
 
 \listP{Sara Delano Roosevelt}{Drumgoole}{Washington Square}{Central}
-\ansP{Manhattan Parks}{Drumgoole Plaza is a public park that sits in the shadow of the Brooklyn Bridge. }
+\ansP{Manhattan Parks}{\textbf{Drumgoole} Plaza is a public park that sits in the shadow of the Brooklyn Bridge. }
 
-\listP{Strange}{Pepper}{Strangelove}{My Eyes}
+\listP{Strange}{Pepper}{\textit{Strangelove}}{``My Eyes''}
 \ansP{Doctor}{Jackson Browne was inducted into the Rock and Roll Hall of Fame in 2004.}
 
 \listP{Jarvis}{Wyatt}{Wyman}{Fonda}
-\ansP{Jane}{Jane Jarvis was the New York Mets organist from 1964-1979.}
+\ansP{Jane}{Jane \textbf{Jarvis} was the New York Mets organist from 1964-1979.}
 
-\listP{Captain Shakespeare}{Al Capone}{Rupert Pupkin}{Sam "Ace" Rothstein}
+\listP{Captain Shakespeare}{Al Capone}{Rupert Pupkin}{Sam ``Ace'' Rothstein}
 \ansP{Robert Deniro Roles}{Other Robert Deniro roles include Vito Corleone, Travis Bickle, Jake Lamotta and Max Cady.}
 
 \listP{Daniel Berrigan}{Gerard Manly Hopkins}{St. Ignatius of Loyola}{Pope Francis}
-\ansP{Jesuits}{St. Ignatius of Loyola was a Spanish knight, priest, and founder of the Society of Jesus, whose members are known as Jesuits. }
+\ansP{Jesuits}{\textbf{St. Ignatius of Loyola} was a Spanish knight, priest, and founder of the Society of Jesus, whose members are known as Jesuits.}
 
 \listP{Abernathy}{Palestine}{Fort Hancock}{Amarillo}
-\ansP{Places in Texas}{In the movie The Shawshank Redemption, Ellis Boyd "Red" Redding crosses the border into Mexico at Fort Hancock. }
+\ansP{Places in Texas}{In the movie The Shawshank Redemption, Ellis Boyd ``Red'' Redding crosses the border into Mexico at \textbf{Fort Hancock}.}
 
 \listP{Maiden}{Booby}{Saint Lucia}{Antigua}
-\ansP{Caribbean Islands}{Small and privately owned, Maiden Island is a part of the independent nation of Antigua and Barbado.}
+\ansP{Caribbean Islands}{Small and privately owned, \textbf{Maiden} Island is a part of the independent nation of Antigua and Barbado.}
 
 \listP{Linda}{Early Ruby}{Ranier}{Bing}
-\ansP{Cherries}{Yellow inside and out with just a splash of red color, Ranier cherries are named after Washington state's largest peak, Mount Ranier.}
+\ansP{Cherries}{Yellow inside and out with just a splash of red color, \textbf{Ranier} cherries are named after Washington state's largest peak, Mount \textbf{Ranier}.}
 
 \listP{Mixed}{Rip}{Neap}{Ebb}
-\ansP{Tides}{Neap Tide is a tide in which the difference between high and low tide is the least.}
+\ansP{Tides}{\textbf{Neap} Tide is a tide in which the difference between high and low tide is the least.}
 
 \listP{Patricia}{Dolley}{Eleanor}{Jacqueline}
-\ansP{First Ladies}{Eleanor Roosevelt considered the day she made her school's field hockey team the happiest of her life. }
+\ansP{First Ladies}{\textbf{Eleanor} Roosevelt considered the day she made her school's field hockey team the happiest of her life. }
 
 \listP{Enigmatic Leaf}{Chicken}{Spotted Box}{Snapping}
-\ansP{Kinds of Turtles}{The Chicken Turtle is an uncommon freshwater turtle found in the southeast of the United States.}
+\ansP{Kinds of Turtles}{The \textbf{Chicken} Turtle is an uncommon freshwater turtle found in the southeast of the United States.}
 
 \listP{Card}{Slip}{Focus Mitt}{Hook}
-\ansP{Boxing Terms}{Justly celebrated for his left hook, Joe Frazier threw an excellent but underrated jab as well. }
+\ansP{Boxing Terms}{Justly celebrated for his left \textbf{hook}, Joe Frazier threw an excellent but underrated jab as well.}
 
 \listP{Crocker}{Brooks}{Ural}{Appalachian}
-\ansP{Mountains}{Mount Kinabalu, one of the highest mountains in South East Asia, is in Malaysia's Crocker Mountain Range.}
+\ansP{Mountains}{Mount Kinabalu, one of the highest mountains in South East Asia, is in Malaysia's \textbf{Crocker} Mountain Range.}
 
 \listP{Whip Chute}{Tiger Lily}{Mrs. Pruneface}{Mumbles}
-\ansP{Dick Tracy Villains}{Tiger Lily created accidents so he could record the sounds and sell them to radio stations.}
+\ansP{Dick Tracy Villains}{\textbf{Tiger Lily} created accidents so he could record the sounds and sell them to radio stations.}
 
 \listP{Kid Elberfeld}{Swede Risberg}{Honus Wagner}{Derek Jeter}
-\ansP{Shortstops}{A ringleader of the 1919 Chicago Black Sox, Swede Risberg went two for twenty five at the plate and made a series record eight errors.}
+\ansP{Shortstops}{A ringleader of the 1919 Chicago Black Sox, \textbf{Swede Risberg} went two for twenty five at the plate and made a series record eight errors.}
 
-\listP{Larry}{Darryl}{Darryl}{Dick }
-\ansP{Characters on the Television Show Newhart}{Larry, Darryl, and his other brother Darryl were played by William Sanderson, Tony Papenfuss and John Volstead.}
+\listP{Leslie Vanderkellen}{Larry}{Darryl}{Darryl}
+\ansP{Characters on the Television Show Newhart}{Larry, \textbf{Darryl}, and his other brother \textbf{Darryl} were played by William Sanderson, Tony Papenfuss and John Volstead.}
 
 \listP{Flared}{Fitted}{Textured}{Ribbed}
 \ansP{Condoms}{450,000,000 million condoms are sold in the United States each year.}
 
 \listP{Sogdianus}{Czolgosz}{Princip}{Booth}
-\ansP{Assassins}{Persian ruler Sogdianus was reportedly an illegitimate son of Arta Xerxes.}
+\ansP{Assassins}{Persian ruler \textbf{Sogdianus} was reportedly an illegitimate son of Arta Xerxes.}
 
 \listP{Extra}{Peppersmith}{Razzles}{Dentyne}
-\ansP{Chewing Gum}{Introduced in 1966, Razzles are a candy that once chewed transforms into chewing gum.}
+\ansP{Chewing Gum}{Introduced in 1966, \textbf{Razzles} are a candy that once chewed transforms into chewing gum.}
 
 \listP{Shrimp Boat}{Burger Chef}{Tops Drive In}{Burger Queen}
-\ansP{Defunct Restaurant Chains}{Based in Macon, Georgia, Shrimp Boat seafood restaurants grew to 95 stores in the Southeast from 1955-1974.}
+\ansP{Defunct Restaurant Chains}{Based in Macon, Georgia, \textbf{Shrimp Boat} seafood restaurants grew to 95 stores in the Southeast from 1955-1974.}
 
 \listP{Paterson}{Jump}{Easy}{Wall}
-\ansP{Street}{In 1789, first President George Washington took the oath of office on a balcony of Wall Street's Federal Hall.}
+\ansP{Street}{In 1789, first President George Washington took the oath of office on a balcony of \textbf{Wall} Street's Federal Hall.}
 
 \listP{Antelope}{Colca}{Copper}{Bryce}
-\ansP{Canyons}{Peru's Colca Canyon has twice the depth of Arizona's Grand Canyon. }
+\ansP{Canyons}{Peru's \textbf{Colca} Canyon has twice the depth of Arizona's Grand Canyon.}
 
 \listP{Barbara's Cinnamon Puffs}{Quisp}{Rice Krinkles}{Franken Berry}
-\ansP{Cereal}{Several television cartoon ads for Quisp cereal were created by Jay Ward of Rocky and Bullwinkle fame. }
+\ansP{Cereal}{Several television cartoon ads for \textbf{Quisp} cereal were created by Jay Ward of Rocky and Bullwinkle fame.}
 
 \listP{Cover}{Pocket}{Pitch}{Slant}
-\ansP{Football Terms}{A Slant is any play in which a receiver goes left or right as opposed to straight ahead.}
+\ansP{Football Terms}{A \textbf{Slant} is any play in which a receiver goes left or right as opposed to straight ahead.}
 
 \listP{Bandy}{Gaelic Football}{Water Polo}{Lacrosse}
-\ansP{Sports with a Goalie}{Bandy is recognized as a precursor to ice hockey.}
+\ansP{Sports with a Goalie}{\textbf{Bandy} is recognized as a precursor to ice hockey.}
 
 \listP{Dunes}{Bulb Fields}{Portrait of Doctor Gachet}{Starry Night Over the Rhone}
-\ansP{Van Gogh Paintings}{Featuring the doctor who took care of him during the final months of his life, Portrait of Doctor Gachet is one of Van Gogh's most revered paintings }
+\ansP{Van Gogh Paintings}{Featuring the doctor who took care of him during the final months of his life, \textbf{Portrait of Doctor Gachet} is one of Van Gogh's most revered paintings.}
 
 \listP{Sugar Bag}{Mining}{Honey}{Bumble}
-\ansP{Bees}{Mining Bees create nesting tunnels in the ground. }
+\ansP{Bees}{\textbf{Mining} Bees create nesting tunnels in the ground. }
 
 \listP{Rudy Ryszczyk}{Grandpa Fred}{Farmer Ted}{Samantha Baker}
 \ansP{Characters in Sixteen Candles}{Other characters include Caroline Mulford, Jake Ryan and Long Duk Dong.}
 
 \listP{Yowie}{Yeren}{Skunk Ape}{Yeti}
-\ansP{Iterations of Bigfoot}{The Yeren, or Chinese Wildman, is described as a red-haired bipedal animal over six feet tall with a pronounced belly and buttocks. }
+\ansP{manifestation of Bigfoot}{The \textbf{Yeren}, or Chinese Wildman, is described as a red-haired bipedal animal over six feet tall with a pronounced belly and buttocks.}
 
 \listP{Franz Josef Land}{Barrow}{East Siberian Sea}{Arctic Ocean}
-\ansP{Places Within the Arctic Circle}{Franz Josef Land is a Russian archipelago inhabited only by military personnel.}
+\ansP{Places Within the Arctic Circle}{\textbf{Franz Josef Land} is a Russian archipelago inhabited only by military personnel.}
 
-\listP{My Leg Hurts}{Rest Very Happy}{The Fox is Sliding Over the Ice}{Here We Come A-wassailing}
-\ansP{Christmas Carols}{There is a variant of "Here We Come A-wassailing" called "Here We Come A-Christmasing"}
+\listP{``My Leg Hurts''}{``Rest Very Happy''}{``The Fox is Sliding Over the Ice''}{``Here We Come A-wassailing''}
+\ansP{Christmas Carols}{There is a variant of ``Here We Come A-wassailing'' called ``Here We Come A-Christmasing''.}
 
 \listP{Rat}{Pig}{Monkey}{Rooster}
-\ansP{Chinese Zodiac Animals}{People born in the year of the Monkey have magnetic personalities and are witty and intelligent.}
+\ansP{Chinese Zodiac Animals}{According to Chinese astrology, people born in the year of the \textbf{Monkey} have magnetic personalities and are witty and intelligent.}
 
 \listP{Spiller}{Split}{Hook}{Gutter}
-\ansP{Bowling Terms}{A Spiller is a lightly hit strike.}
+\ansP{Bowling Terms}{A \textbf{Spiller} is a lightly hit strike.}
 
 \listP{Anfu}{Bayonne}{Black Forrest}{Canned}
-\ansP{Kinds of Ham}{Anfu Ham is an ancient dry-cured ham from Anfu, Jiangxi, China, that originated in the Qin Dynasty.}
+\ansP{Kinds of Ham}{Anfu Ham is an ancient dry-cured ham from \textbf{Anfu}, Jiangxi, China, that originated in the Qin Dynasty.}
 
 \listP{Eve Road}{Shirley MacLaine}{Aurora Greenway}{Irma la Douce}
-\ansP{Shirley MacLaine Characters}{Shirley MacLaine played herself in Albert Brooks' 1991 comedy Defending Your Life.}
+\ansP{Shirley MacLaine Characters}{\textbf{Shirley MacLaine} played herself in Albert Brooks' 1991 comedy Defending Your Life.}
 
 \listP{Elie Zelcer}{Charlotte Delbo}{Otto Frank}{Primo Levi}
-\ansP{Holocaust Survivors}{Anne Frank's father Otto (1889-1980) was the only member of the family to survive the Holocaust.}
+\ansP{Holocaust Survivors}{Anne \textbf{Frank}'s father \textbf{Otto} (1889-1980) was the only member of the family to survive the Holocaust.}
