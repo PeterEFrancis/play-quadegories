@@ -651,7 +651,7 @@
 \ansP{Van Gogh Paintings}{Featuring the doctor who took care of him during the final months of his life, \textbf{Portrait of Doctor Gachet} is one of Van Gogh's most revered paintings.}
 
 \listP{Sugar Bag}{Mining}{Honey}{Bumble}
-\ansP{Bees}{\textbf{Mining} Bees create nesting tunnels in the ground. }
+\ansP{Bees}{\textbf{Mining} Bees create nesting tunnels in the ground.}
 
 \listP{Rudy Ryszczyk}{Grandpa Fred}{Farmer Ted}{Samantha Baker}
 \ansP{Characters in Sixteen Candles}{Other characters include Caroline Mulford, Jake Ryan and Long Duk Dong.}
