@@ -44,50 +44,35 @@
         <div class="col-md-12">
           <button type="button" class="btn" onclick="location.href='/';">
             <span class="glyphicon glyphicon-home"></span>
-            <h5> Go<br>Home</h5>
+            <!-- <h5> Go<br>Home</h5> -->
+          </button>
+          <button type="button" class="btn"
+                  onclick="location.href='/choose-collection';">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <!-- <h5>Choose<br/>Collection</h5> -->
+          </button>
+          <button type="button" class="btn"
+                  onclick="location.href='/collection/{{collection}}';">
+            <span class="glyphicon glyphicon-th-list"></span>
+            <!-- <h5>Collection<br/>Info</h5> -->
           </button>
           <button type="button" class="btn"
                   onclick="location.href='/game/{{collection}}';">
             <span class="glyphicon glyphicon-refresh"></span>
-            <h5>New<br/> Quadegory</h5>
+            <!-- <h5>Random<br/>Quadegory</h5> -->
           </button>
           <button type="button" class="btn"
-                  onclick="location.href='/choose-collection';">
-            <span class="glyphicon glyphicon-th-list"></span>
-            <h5>Choose<br/>Collection</h5>
+                  onclick="next()">
+            <span class="glyphicon glyphicon glyphicon-arrow-right"></span>
+            <!-- <h5>Next<br/>Quadegory</h5> -->
           </button>
-          <button type="button" class="btn" data-toggle="modal"
-                  data-target="#myModal">
-            <span class="glyphicon glyphicon-info-sign"></span>
-            <h5>Game<br>Info</h5>
-          </button>
-          <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Game </h4>
-                </div>
-                <div class="modal-body">
-                  <p>Click <strong>Quadegory</strong> to toggle reveal/hide the quadegory and interesting fact.</p>
-                  <p>Click <strong>Clue #-</strong> to reveal each successive clue.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-          <h2 class="text-center" style="text-transform: capitalize;">The {{collection}} Collection</h2>
+          <br/>
           <br/>
           <div class="panel-group">
             <div class="panel panel-default">
@@ -95,7 +80,7 @@
                 <h3 class="panel-title">
                   <a data-toggle="collapse" href="#collapse1" id="title"
                      style="font-size: 20pt;">
-                    Quadegory
+                    Quadegory #{{choice}}
                   </a>
                 </h1>
               </div>
@@ -108,22 +93,52 @@
           <br/>
           <div class="btn-group-vertical center-block">
             <button type="button" class="btn clue" id="clue4" onclick="clue4()">
-              &gt;&gt;&nbsp; Clue #4 &nbsp;&lt;&lt;</button>
+              &gt;&gt;&nbsp; 4 pt. Clue &nbsp;&lt;&lt;</button>
 
             <button type="button" class="btn clue" id="clue3"
-                    onclick="clue3()" disabled="true">Clue #3</button>
+                    onclick="clue3()" disabled="true">3 pt. Clue</button>
 
             <button type="button" class="btn clue" id="clue2"
-                    onclick="clue2()" disabled="true">Clue #2</button>
+                    onclick="clue2()" disabled="true">2 pt. Clue</button>
 
             <button type="button" class="btn clue" id="clue1"
-                    onclick="clue1()" disabled="true">Clue #1</button>
+                    onclick="clue1()" disabled="true">1 pt. Clue</button>
            </div>
         </div>
         <div class="col-md-3">
         </div>
       </div>
     </div>
+
+    <p style="position:absolute; left:0px; bottom:0px; text-transform: capitalize; padding:10px; margin: 0px">
+      The {{collection}} Collection
+    </p>
+
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
+            style="position:absolute; right:0px; bottom:0px;">
+      <span class="glyphicon glyphicon-info-sign"></span>
+    </button>
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Game </h4>
+          </div>
+          <div class="modal-body">
+            <p>Click <strong>Quadegory</strong> to toggle reveal/hide the quadegory and interesting fact.</p>
+            <p>Click <strong># pt. Clue</strong> to reveal each successive clue.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+    </div>
+  </div>
   </body>
   <script>
     document.getElementById('quad').innerHTML = '<h2>' + toHTML('{{quad}}') + '</h2>';
@@ -158,6 +173,15 @@
       document.getElementById('clue1').innerHTML=toHTML("{{ clue1 }}");
       document.getElementById('clue1').disabled=true;
     };
+
+
+    function next() {
+      if ({{choice}} + 1 > {{ max }}) {
+        location.href='/transition&f=' + '{{ collection }}';
+        return null;
+      }
+      location.href='/game/{{collection}}/{{choice+1}}';
+    }
 
   </script>
 </html>

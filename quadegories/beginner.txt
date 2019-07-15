@@ -1,3 +1,5 @@
+\begin{Description} Simple Quadegories for younger players or Beginners \end{Description}
+
 \listP{Pringles}{Tostitos}{Lay's}{Doritos}
 \ansP{Chip Brands}{The \textit{vanishing caloric density} is the phenomenon that snacks that melt in your mouth also trick your subconscious into thinking they don't contain calories.}
 

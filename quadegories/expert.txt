@@ -1,3 +1,6 @@
+\begin{Description} Challenging Quadegories from an eclectic variety of sources \end{Description}
+
+
 \listP{Pommes dauphin}{Clam cake}{Savory patty}{Egg roll}
 \ansP{Fried Foods}{The  \textbf{clam cake} was invented at Aunt Carrie's, an award-winning Rhode Island restaurant, when Aunt Carrie added fresh clams to corn fritters.}
 

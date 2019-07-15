@@ -37,9 +37,14 @@ def format(string):
     return string
 
 def loadIn(collection):
-    text = ''.join(line if line[0]=='\\' else '' for line in open(f'quadegories/{collection}', 'r').readlines())
-    quadegories = re.split('\\\\listP', text)[1:]
-    # format text
+    text = ''.join(line  if (line[0]=='\\' or line[0:2] == '%!') else '' for line in open(f'quadegories/{collection}', 'r').readlines())
+    # split at the end of description
+    parts = re.split('end{Description}', text)
+    # recover description
+    description = parts[0][20:-2]
+    # sort quadegories
+    quadegories = re.split('\\\\listP', parts[1])[1:]
+    # format
     for i in range(len(quadegories)):
         # Split into quads and clues
         quadegories[i] = re.split('\\n\\\\ansP', quadegories[i])
@@ -53,19 +58,20 @@ def loadIn(collection):
         quadegories[i] = [re.sub('`', "\\'", string) for string in quadegories[i]]
         # delete \\
         quadegories[i] = [re.sub('\\\\', '', string) for string in quadegories[i]]
-        # replace bold statements    textbf{string} --> <strong>string</strong>
+        # replace bold statements       textbf{string} --> <strong>string</strong>
         # replace italics statements    textit{string} --> <em>string</em>
-        # replace sc statements       textsc{string} --> <span style="font-variant:small-caps;">string</span>
+        # replace sc statements         textsc{string} --> <span style="font-variant:small-caps;">string</span>
         quadegories[i] = [format(string) for string in quadegories[i]]
-    return quadegories
+    return description, quadegories
 
 
 
 # load in all collection files
 collectionDict = {}
+descriptionDict = {}
 for file in os.listdir('quadegories'):
     if os.fsdecode(file).endswith('.txt'):
-        collectionDict[os.fsdecode(file)[:-4]] = loadIn(file)
+        descriptionDict[os.fsdecode(file)[:-4]], collectionDict[os.fsdecode(file)[:-4]] = loadIn(file)
 
 
 @app.route('/choose-collection')
@@ -74,13 +80,27 @@ def choose():
     return render_template('choose-collection.html', collectionDict=collectionDict)
 
 
+@app.route('/transition')
+@app.route('/transition&f=<string:collection>')
+def transition(collection):
+    return render_template('transition.html', collection=collection)
+
 
 @app.route('/game')
 def auto():
-    return redirect('/game/general/1')
+    return redirect('/game/beginner/0')
 
 
-@app.route('/game/<string:collection>/')
+@app.route('/collection/<string:collection>')
+def collectionInfo(collection):
+    global descriptionDict
+    description = descriptionDict[collection]
+    global collectionDict
+    quadegories = collectionDict[collection]
+    return render_template('collection-info.html', collection=collection,
+                                                   description=description,
+                                                   max=len(quadegories) - 1)
+
 @app.route('/game/<string:collection>')
 def chooseRand(collection):
     global collectionDict
@@ -94,9 +114,10 @@ def game(collection, choice):
     quadegories = collectionDict[collection]
     [clue4, clue3, clue2, clue1, quad, fact] = quadegories[choice]
     return render_template('game.html', collection = collection, quad = quad,
-                                        fact = fact, clue4 = clue4,
-                                        clue3 = clue3, clue2 = clue2,
-                                        clue1 = clue1)
+                                        choice = choice, fact = fact,
+                                        clue4 = clue4, clue3 = clue3,
+                                        clue2 = clue2, clue1 = clue1,
+                                        max = len(quadegories) - 1)
 
 
 if __name__ == "__main__":
