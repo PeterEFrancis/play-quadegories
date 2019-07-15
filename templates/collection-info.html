@@ -65,20 +65,20 @@
           <p class="text-center">{{ description }}</p>
           <br/>
           <button type="button" class="btn border center-block"
-                  onclick="location.href='/game/{{collection}}/0'">
+                  onclick="location.href='/game/{{ collection }}/0'">
             <h3>Start Collection</h3>
           </button>
           <br/>
           <div class="form-group center-block" style="width:230px">
             Jump To
-            <input id="jump" size="7" placeholder="0 - {{ max }}">
+            <input id="jump" size="7" placeholder=" 0 - {{ max }}">
             <button type="button" class="btn border" onclick="jumpTo()">
               <span class="glyphicon glyphicon glyphicon-play"></span>
             </button>
           </div>
           <br/>
           <button type="button" class="btn border center-block"
-                  onclick="location.href='/game/{{collection}}'">
+                  onclick="location.href='/game/{{ collection }}'">
             <h3>Random Quadegory</h3>
           </button>
         </div>
@@ -102,7 +102,7 @@
         window.alert('Please only enter a number between 0 and {{ max }}.');
         return null;
       }
-      location.href='/game/{{collection}}/' + number;
+      location.href='/game/{{ collection }}/' + number;
     }
 
 
