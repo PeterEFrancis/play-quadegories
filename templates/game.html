@@ -174,11 +174,11 @@
 
 
     function next() {
-      if ({{choice}} + 1 > {{ max }}) {
+      if ({{ choice }} + 1 > {{ max }}) {
         location.href='/transition&f=' + '{{ collection }}';
         return null;
       }
-      location.href='/game/{{collection}}/{{choice+1}}';
+      location.href='/game/{{ collection }}/{{ choice + 1 }}';
     }
 
   </script>
