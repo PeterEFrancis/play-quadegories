@@ -53,7 +53,7 @@
           </button>
           <button type="button" class="btn"
                   onclick="location.href='/collection/{{collection}}';">
-            <span class="glyphicon glyphicon-th-list"></span>
+            <span class="glyphicon glyphicon-th"></span>
             <!-- <h5>Collection<br/>Info</h5> -->
           </button>
           <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
@@ -61,7 +61,7 @@
           </button>
           <button type="button" class="btn"
                   onclick="location.href='/game/{{collection}}';">
-            <span class="glyphicon glyphicon-refresh"></span>
+            <span class="glyphicon glyphicon-random"></span>
             <!-- <h5>Random<br/>Quadegory</h5> -->
           </button>
           <button type="button" class="btn"
@@ -150,21 +150,21 @@
       document.getElementById('clue4').innerHTML=toHTML("{{ clue4 }}");
       document.getElementById('clue4').disabled=true;
       document.getElementById('clue3').disabled=false;
-      document.getElementById('clue3').innerHTML = '&gt;&gt;&nbsp; Clue #3 &nbsp;&lt;&lt;'
+      document.getElementById('clue3').innerHTML = '&gt;&gt;&nbsp; 3 pt. Clue &nbsp;&lt;&lt;'
     };
 
     function clue3() {
       document.getElementById('clue3').innerHTML=toHTML("{{ clue3 }}");
       document.getElementById('clue3').disabled=true;
       document.getElementById('clue2').disabled=false;
-      document.getElementById('clue2').innerHTML = '&gt;&gt;&nbsp; Clue #2 &nbsp;&lt;&lt;'
+      document.getElementById('clue2').innerHTML = '&gt;&gt;&nbsp; 2 pt. Clue &nbsp;&lt;&lt;'
     };
 
     function clue2() {
       document.getElementById('clue2').innerHTML= toHTML("{{ clue2 }}");
       document.getElementById('clue2').disabled=true;
       document.getElementById('clue1').disabled=false;
-      document.getElementById('clue1').innerHTML = '&gt;&gt;&nbsp; Clue #1 &nbsp;&lt;&lt;'
+      document.getElementById('clue1').innerHTML = '&gt;&gt;&nbsp; 1 pt. Clue &nbsp;&lt;&lt;'
     };
 
     function clue1() {

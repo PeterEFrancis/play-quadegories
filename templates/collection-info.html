@@ -28,6 +28,7 @@
 
       h3 {
         font-size: 20pt;
+        margin: 15px 0px 15px;
       }
 
       .hide-overflow{
@@ -55,19 +56,29 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <h2 class="text-center" style="text-transform: capitalize;">
             The {{ collection }} Collection
           </h2>
           <br/>
           <p class="text-center">{{ description }}</p>
           <br/>
-          <button type="button" class="btn border center-block"
-                  onclick="location.href='/game/{{ collection }}/0'">
-            <h3>Start Collection</h3>
-          </button>
+          <div class="row">
+            <div class="col-sm-6" style="padding:15px">
+              <button type="button" class="btn border center-block"
+                      onclick="location.href='/game/{{ collection }}/0'">
+                <h3>Start Collection</h3>
+              </button>
+            </div>
+            <div class="col-sm-6" style="padding:15px">
+              <button type="button" class="btn border center-block"
+                      onclick="location.href='/game/{{ collection }}'">
+                <h3>Random Quadegory</h3>
+              </button>
+            </div>
+          </div>
           <br/>
           <div class="form-group center-block" style="width:230px">
             Jump To
@@ -77,12 +88,17 @@
             </button>
           </div>
           <br/>
-          <button type="button" class="btn border center-block"
-                  onclick="location.href='/game/{{ collection }}'">
-            <h3>Random Quadegory</h3>
-          </button>
+          <div style="max-width:610px" class="center-block">
+            {% for i in range(max + 1) %}
+              <button type="button" class="btn border"
+                      style="width:50px; margin-bottom:5.5px;"
+                      onclick="location.href='/game/{{ collection }}/{{ i }}'">
+                {{ i }}
+              </button>
+            {% endfor %}
+          </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
         </div>
       </div>
     </div>

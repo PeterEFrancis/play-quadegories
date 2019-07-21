@@ -91,7 +91,7 @@ def auto():
     return redirect('/game/beginner/0')
 
 
-@app.route('/collection/<string:collection>')
+@app.route('/collection&c=<string:collection>')
 def collectionInfo(collection):
     global descriptionDict
     description = descriptionDict[collection]
