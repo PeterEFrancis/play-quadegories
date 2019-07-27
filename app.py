@@ -81,7 +81,7 @@ def choose():
 
 
 @app.route('/transition')
-@app.route('/transition&f=<string:collection>')
+@app.route('/transition/<string:collection>')
 def transition(collection):
     return render_template('transition.html', collection=collection)
 
@@ -91,7 +91,7 @@ def auto():
     return redirect('/game/beginner/0')
 
 
-@app.route('/collection&c=<string:collection>')
+@app.route('/collection/<string:collection>')
 def collectionInfo(collection):
     global descriptionDict
     description = descriptionDict[collection]

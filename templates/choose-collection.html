@@ -46,12 +46,12 @@
           <h2 class="text-center" style="text-transform: capitalize;">Choose Collection</h2>
           <br/>
           <div class="panel-group" id="accordion">
-          {% for collection in collectionDict%}
+          {% for collection in collectionDict %}
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <!-- data-toggle="collapse" data-parent="#accordion" -->
-                  <a href="/collection&c={{ collection }}" style="text-transform: capitalize;">
+                  <a href="/collection/{{ collection }}" style="text-transform: capitalize;">
                   {{ collection }}</a> <!-- #collapse{{i}} -->
                 </h4>
               </div>
