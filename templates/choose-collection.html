@@ -33,7 +33,7 @@
     <div class="container">
       <div class="row" style="margin-top:10px;">
         <div class="col-md-12">
-          <button type="button" class="btn" onclick="location.href='/';">
+          <button type="button" class="btn" onclick="location.href='/';" data-toggle="tooltip" title="Home" data-placement="bottom">
             <span class="glyphicon glyphicon-home"></span>
             <!-- <h5>Go<br>Home</h5> -->
           </button>
@@ -66,5 +66,11 @@
       </div>
     </div>
   </body>
-  <script></script>
+
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
+
 </html>

@@ -36,35 +36,43 @@
         border: 1px solid black;
       }
 
+      .box {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row" style="margin-top:10px;">
         <div class="col-md-12">
-          <button type="button" class="btn" onclick="location.href='/';">
+          <button type="button" class="btn" data-toggle="tooltip" title="Home" data-placement="bottom"
+                  onclick="location.href='/';">
             <span class="glyphicon glyphicon-home"></span>
             <!-- <h5> Go<br>Home</h5> -->
           </button>
-          <button type="button" class="btn"
+          <button type="button" class="btn" data-toggle="tooltip" title="Collections" data-placement="bottom"
                   onclick="location.href='/choose-collection';">
             <span class="glyphicon glyphicon-list-alt"></span>
             <!-- <h5>Choose<br/>Collection</h5> -->
           </button>
-          <button type="button" class="btn"
-                  onclick="location.href='/collection/{{collection}}';">
+          <button type="button" class="btn" data-toggle="tooltip" title="Quadegories" data-placement="bottom"
+                  onclick="location.href='/collection/{{ collection }}';">
             <span class="glyphicon glyphicon-th"></span>
             <!-- <h5>Collection<br/>Info</h5> -->
           </button>
-          <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+          <button type="button" class="btn" data-toggle="tooltip" title="Info" data-placement="bottom"
+                  data-toggle="modal" data-target="#myModal">
             <span class="glyphicon glyphicon-info-sign"></span>
           </button>
-          <button type="button" class="btn"
-                  onclick="location.href='/game/{{collection}}';">
+          <button type="button" class="btn" data-toggle="tooltip" title="Random" data-placement="bottom"
+                  onclick="location.href='/game/{{ collection }}';">
             <span class="glyphicon glyphicon-random"></span>
             <!-- <h5>Random<br/>Quadegory</h5> -->
           </button>
-          <button type="button" class="btn"
+          <button type="button" class="btn" data-toggle="tooltip" title="Next" data-placement="bottom"
                   onclick="next()">
             <span class="glyphicon glyphicon glyphicon-arrow-right"></span>
             <!-- <h5>Next<br/>Quadegory</h5> -->
@@ -83,7 +91,7 @@
                 <h3 class="panel-title">
                   <a data-toggle="collapse" href="#collapse1" id="title"
                      style="font-size: 20pt; text-transform: capitalize;">
-                    {{ collection }} Quadegory #{{choice}}
+                    {{ collection }} Quadegory #{{ choice }}
                   </a>
                 </h1>
               </div>
@@ -127,8 +135,8 @@
             <h4 class="modal-title">Game Play</h4>
           </div>
           <div class="modal-body">
-            <p>Click <strong>Quadegory # --</strong> to toggle reveal/hide the quadegory and interesting fact.</p>
-            <p>Click <strong>&gt;&gt; -- pt. Clue &lt;&lt;</strong> to reveal each successive clue.</p>
+            <p>Click <strong class="box">Quadegory # --</strong> to toggle reveal/hide the quadegory and interesting fact.</p>
+            <p>Click <strong class="box">&gt;&gt; -- pt. Clue &lt;&lt;</strong> to reveal each successive clue.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -182,4 +190,12 @@
     }
 
   </script>
+
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
+
+
 </html>
