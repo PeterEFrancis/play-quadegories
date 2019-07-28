@@ -48,31 +48,31 @@
     <div class="container">
       <div class="row" style="margin-top:10px;">
         <div class="col-md-12">
-          <button type="button" class="btn" data-toggle="tooltip" title="Home" data-placement="bottom"
+          <button type="button" class="btn"
                   onclick="location.href='/';">
             <span class="glyphicon glyphicon-home"></span>
             <!-- <h5> Go<br>Home</h5> -->
           </button>
-          <button type="button" class="btn" data-toggle="tooltip" title="Collections" data-placement="bottom"
+          <button type="button" class="btn"
                   onclick="location.href='/choose-collection';">
             <span class="glyphicon glyphicon-list-alt"></span>
             <!-- <h5>Choose<br/>Collection</h5> -->
           </button>
-          <button type="button" class="btn" data-toggle="tooltip" title="Quadegories" data-placement="bottom"
+          <button type="button" class="btn"
                   onclick="location.href='/collection/{{ collection }}';">
             <span class="glyphicon glyphicon-th"></span>
             <!-- <h5>Collection<br/>Info</h5> -->
           </button>
-          <button type="button" class="btn" data-toggle="tooltip" title="Info" data-placement="bottom"
+          <button type="button" class="btn"
                   data-toggle="modal" data-target="#myModal">
             <span class="glyphicon glyphicon-info-sign"></span>
           </button>
-          <button type="button" class="btn" data-toggle="tooltip" title="Random" data-placement="bottom"
+          <button type="button" class="btn"
                   onclick="location.href='/game/{{ collection }}';">
             <span class="glyphicon glyphicon-random"></span>
             <!-- <h5>Random<br/>Quadegory</h5> -->
           </button>
-          <button type="button" class="btn" data-toggle="tooltip" title="Next" data-placement="bottom"
+          <button type="button" class="btn"
                   onclick="next()">
             <span class="glyphicon glyphicon glyphicon-arrow-right"></span>
             <!-- <h5>Next<br/>Quadegory</h5> -->
@@ -189,12 +189,6 @@
       location.href='/game/{{ collection }}/{{ choice + 1 }}';
     }
 
-  </script>
-
-  <script>
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-  });
   </script>
 
 
