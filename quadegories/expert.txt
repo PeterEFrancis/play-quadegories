@@ -491,9 +491,6 @@
 \listP{Morocco}{Italy}{France}{Israel}
 \ansP{Countries that Border the Mediterranean Sea}{A recent count put the number of islands in the Mediterranean Sea at 1,460.}
 
-\listP{Draped Bust}{Morgan}{Sacagawea}{Seated Liberty}
-\ansP{US Silver Dollars}{Other US Silver Dollars are the Flowing Hair and Peace.}
-
 \listP{Peechi}{Three Gorges}{Hoover}{Grand Coulee}
 \ansP{Dams}{India's \textbf{Peechi} Dam is renowned as a beautiful spot for a peaceful stroll }
 
@@ -510,10 +507,8 @@
 \listP{Tomorrowland}{Super Bock Super Rock}{Cannes}{Mardi Gras}
 \ansP{Festivals}{\textbf{Super Bock Super Rock} is a rock festival in Portugal created in 1994.}
 
-
 \listP{Water}{Heart}{Husk}{Shell}
 \ansP{Parts of a Coconut}{One of the earliest recorded references to a coconut occurs in the story of Sinbad in ``One Thousand and One Nights''.}
-
 
 \listP{Mancini}{Kroc}{Wallston}{Robinson}
 \ansP{Ray}{Ray \textbf{Wallston} appeared in numerous films, including South Pacific, The Sting and Of Mice and Men}
@@ -660,7 +655,7 @@
 \ansP{Characters in Sixteen Candles}{Other characters include Caroline Mulford, Jake Ryan and Long Duk Dong.}
 
 \listP{Yowie}{Yeren}{Skunk Ape}{Yeti}
-\ansP{manifestation of Bigfoot}{The \textbf{Yeren}, or Chinese Wildman, is described as a red-haired bipedal animal over six feet tall with a pronounced belly and buttocks.}
+\ansP{Manifestations of Bigfoot}{The \textbf{Yeren}, or Chinese Wildman, is described as a red-haired bipedal animal over six feet tall with a pronounced belly and buttocks.}
 
 \listP{Franz Josef Land}{Barrow}{East Siberian Sea}{Arctic Ocean}
 \ansP{Places Within the Arctic Circle}{\textbf{Franz Josef Land} is a Russian archipelago inhabited only by military personnel.}
@@ -752,3 +747,54 @@
 
 \listP{It was officially opened in 1931}{It was modeled after two earlier buildings}{A B-25 Bomber crashed into it}{For forty one years it was the tallest building in the world.}
 \ansP{The Empire State Building}{The upper tower of the \textbf{Empre State Building} was originally designed as a mooring mast for airships.}
+
+
+
+
+\listP{Confetti}{Nonpareils}{Edible Glitter}{Jimmies}
+\ansP{Sprinkles}{The Jimmie is the popular, cylindrically shaped sprinkle.}
+
+\listP{Garden}{Oscillating}{Traveling}{In-Ground}
+\ansP{Lawn Sprinklers}{The first US patent for "Lawn Sprinkler" was awarded to J. Lessler of Buffalo, New York, in 1871.}
+
+\listP{Binky Binkenstein}{Bunnicula}{Velveteen}{Bugs}
+\ansP{Fictional Rabbits}{Other fictional rabbits include Pupu Tupuna, Mister Zig Zag, Harvey and Thunderbunny.}
+
+\listP{Judy Garland}{Eleanor Powell}{Cyd Charisse}{Ginger Rogers}
+\ansP{Danced with Fred Astaire}{Of all of his partners, Fred Astaire claimed that Eleanor Powell was the "only one who put 'em down like a man." }
+
+\listP{Caroline Herschel}{Edwin Hubble}{Nicolaus Copernicus}{Steven Hawking}
+\ansP{Astronomers}{Copernicus is famous for his heliocentric illustration of the universe.}
+
+\listP{Black Cherry}{Early Girl}{Better Boy}{Beefsteak}
+\ansP{Tomato Varieties}{Other tomato varieties include Green Zebra, Dixie Golden Giant and Chocolate Striped.}
+
+\listP{Princess}{Round}{Radiant}{Baguette}
+\ansP{Diamond Cuts}{The only thing that can scratch a diamond is another diamond.}
+
+\listP{Iron}{Dog}{Thimble}{Top Hat}
+\ansP{Monopoly Pieces}{When Monopoly was first introduced, top hat-wearing Mr. Monopoly was known as Rich Uncle Pennybags.}
+
+\listP{Landau}{Hackney}{Buckboard}{Stagecoach}
+\ansP{Horse-Drawn Carriages}{Other Horse-Drawn Carriages include buggys, cabs and gigs.}
+
+\listP{Raw}{White}{Dark}{Milk}
+\ansP{Chocolate}{Fermented Beverages made from chocolate date back to 450 BC.}
+
+\listP{Freetown}{Algiers}{Kampala}{Cairo}
+\ansP{African Capitals}{Freetown, the capital of Sierra Leone, was first settled in 177 by 400 former British slaves sent from London.}
+
+\listP{Commerson's}{Pacific White-Sided}{Atlantic Spotted}{Bottlenose}
+\ansP{Dolphins}{Although widespread, most dolphin species prefer the warmer waters of the tropic zones.}
+
+\listP{Moongil}{Black Asian}{California Wild}{Basmati}
+\ansP{Rice}{All forms of Asian rice sprang from a single domestication that occurred 8,200-13,500 years ago in ancient China.}
+
+\listP{Jack Paar}{John Major}{Roger Ailes}{Richard Nixon}
+\ansP{Resigned}{Former British Prime Minister John Major resigned as leader of the Conservative Party on June 19, 1997.}
+
+\listP{School}{Pediatric}{Case Management}{Emergency Room}
+\ansP{Nurses}{The first nursing school was established in India in 250 BC.}
+
+\listP{A Boy and his Blob}{Drill Dozer}{Tetris}{Super Mario Brothers}
+\ansP{Nintendo Games}{Players of A Boy and his Blob must navigate the dangerous terrain of Blobolonia. }
