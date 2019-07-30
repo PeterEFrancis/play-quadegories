@@ -682,3 +682,73 @@
 
 \listP{Elie Zelcer}{Charlotte Delbo}{Otto Frank}{Primo Levi}
 \ansP{Holocaust Survivors}{Anne \textbf{Frank}'s father \textbf{Otto} (1889-1980) was the only member of the family to survive the Holocaust.}
+
+
+
+
+\listP{\textit{Trouble at Lake Tahoe}}{\textit{The Curse of the Black Cat}}{\textit{The Secret of the Old Clock}}{\textit{Nancy's Mysterious Letter}}
+\ansP{Nancy Drew Books}{Carolyn Keene is the pseudonym of the ghostwriters who wrote the Nancy Drew mystery stories for the Stratemeyer Syndicate.}
+
+\listP{Flying Dragon }{Fantastic Leaf-tailed Gecko}{Monitor}{Gila Monster}
+\ansP{Lizards}{As a general rule lizards cannot stand the smell of garlic.}
+
+\listP{Spife}{Lobster Pick}{Sugar Tongs}{Butter Knife}
+\ansP{Utensils}{A combination spoon and knife, a \textbf{spife} is a utensil given with international flight Aer Lingus meals.}
+
+\listP{McGinty}{Gazoo}{Gildersleeve}{Depression}
+\ansP{The Great}{Preston Sturgess won the 1940 Academy Award for Best Original Screenplay for his political satire \textit{The Great McGinty}.}
+
+\listP{Husk}{Tassel}{Silk}{Ear}
+\ansP{Parts of a Corn Plant}{The \textbf{tassel} is the male part of a corn plant.}
+
+\listP{Patagonian Opossum}{Bandicoot}{Tree Kangaroo}{Koala}
+\ansP{Marsupials}{\textbf{Bandicoots} produce a snuffling sound while searching for food and grunt like pigs when the food is detected.}
+
+\listP{Hardy}{Roddick}{Griffith}{Warhol}
+\ansP{Andy}{Actor Andy \textbf{Griffith} studied music at the University of North Carolina in Chapel Hill.}
+
+\listP{John Carter}{Caspian}{Charming}{Aladdin}
+\ansP{Fictional Princes}{Edgar Rice Burroughs' \textbf{John Carter} of Mars became a Prince upon his marriage to Princess Dejah Thoris of Helium.}
+
+\listP{Niall of the Nine Hostages}{Ernie Pyle}{The Fallen Fifty}{George Armstrong Custer}
+\ansP{Died in Battle}{\textbf{Niall of the Nine Hostages} was an Irish king said to have ruled in Northern Ireland in the late fourth and early fifth centuries.}
+
+\listP{Bottom}{Rock Island}{Maginot}{Mason Dixon}
+\ansP{Line}{The \textbf{Maginot} Line consisted of concrete fortifications, obstacles, and weapons installations built by France in the 1930's to deter a German invasion.}
+
+\listP{House}{Horse}{Blue Bottle}{Common Midge}
+\ansP{Flies}{The \textbf{House} Fly is found worldwide and is the most common fly found around human dwellings.}
+
+\listP{Fan}{Elks}{Strip}{Golf}
+\ansP{Club}{The Benevolent and Productive Order of \textbf{Elks} of the United States of America was formally organized on February 16, 1868, in New York City.}
+
+\listP{Sun}{Brown}{Black}{Polar}
+\ansP{Bears}{The \textbf{Sun} Bear is a shy Southeast Asian forest bear that eats insects, honey, fruit, plants and shoots.}
+
+\listP{\textit{Manhattan}}{\textit{Ironweed}}{\textit{The Bridges of Madison County}}{\textit{Kramer vs. Kramer}}
+\ansP{Meryl Streep Movies}{Other Meryl Streep movies include \textbf{Out of Africa}, \textbf{The Deer Hunter}, and \textbf{Sophie's Choice}.}
+
+\listP{Deely Bobber}{Fillet}{Yarmulke}{Bonnet}
+\ansP{Worn on the Head}{A \textbf{Deely Bobber} is a novelty item consisting of a headband to which springy, colorful antennae are attached.}
+
+
+\listP{Colleen Corriston}{Chawinga}{Sissi}{Marta}
+\ansP{Women Soccer Players}{Two years after leaving the small town of Esplanade, Brazil, as a fourteen year old, \textbf{Sissi} began featuring with the Brazilian National Team.}
+
+\listP{Boycott}{Guppy}{Schrapnel}{Pompadour}
+\ansP{Named After People}{The \textbf{Pompadour} is a hairstyle named after Madame de Pompadour, a mistress of King Louis XV.}
+
+\listP{Joule}{Celsius}{Kelvin}{Watt}
+\ansP{Measurements Named After People}{A \textbf{Joule} equals one newton multiplied by a meter (1J=1Nx1m)}
+
+\listP{Bat}{Eins}{Eitt}{Uno}
+\ansP{Words for Number One}{\textbf{One} is the 35th most commonly used word in the English language, just ahead of "all".}
+
+\listP{Virgin}{Lyre}{Winged Horse}{Little Bear}
+\ansP{Constellations}{According to the International Astronomical Association, there are 88 \textit{constellations} in the sky.}
+
+\listP{Falling Leaves}{Flying Fish}{Ground Spinner}{Roman Candle}
+\ansP{Fireworks}{Other \textit{fireworks} include Dahlia, Chrysanthemum, and Tree Spider.}
+
+\listP{It was officially opened in 1931}{It was modeled after two earlier buildings}{A B-25 Bomber crashed into it}{For forty one years it was the tallest building in the world.}
+\ansP{The Empire State Building}{The upper tower of the \textbf{Empre State Building} was originally designed as a mooring mast for airships.}
