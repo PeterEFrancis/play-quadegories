@@ -61,6 +61,7 @@ def chooseRand(collection):
     return redirect(f'/game/{collection}/' + str(random.randint(0,len(quadegories)-1)))
 
 
+
 @app.route('/game/<string:collection>/<int:choice>')
 def game(collection, choice):
     global collectionDict
@@ -74,4 +75,4 @@ def game(collection, choice):
 
 
 if __name__ == "__main__":
-    app.run(port=1969)
+    app.run(port=2001)
