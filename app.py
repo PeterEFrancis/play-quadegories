@@ -23,6 +23,8 @@ from quadegories.beginner import *
 descriptionDict['Beginner'], collectionDict['Beginner'] = beginnerTup
 from quadegories.expert import *
 descriptionDict['Expert'], collectionDict['Expert'] = expertTup
+from quadegories.harryPotter import *
+descriptionDict['Harry Potter'], collectionDict['Harry Potter'] = harryPotterTup
 
 
 
@@ -75,4 +77,4 @@ def game(collection, choice):
 
 
 if __name__ == "__main__":
-    app.run(port=2001)
+    app.run(port=2005)
