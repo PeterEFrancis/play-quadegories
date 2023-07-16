@@ -33,19 +33,24 @@
           </h2>
           <div class="btn-group-vertical center-block w-100">
             <button id="clue4" type="button" class="btn btn-lg btn-outline-dark" onclick="clue(4)">
-              <span id="clue4-pre">4 pt. Clue</span>
+              <span id="clue4-pre">&gt;&gt; 4 pt. Clue &lt;&lt;</span>
+              <span id="clue4-next" hidden>&gt;&gt; 4 pt. Clue &lt;&lt;</span>
+
               <span id="clue4-post" hidden>{{ quad['C4']|safe }}</span>
             </button>
             <button id="clue3" type="button" class="btn btn-lg btn-outline-dark" onclick="clue(3)" disabled>
               <span id="clue3-pre">3 pt. Clue</span>
+              <span id="clue3-next" hidden>&gt;&gt; 3 pt. Clue &lt;&lt;</span>
               <span id="clue3-post" hidden>{{ quad['C3']|safe }}</span>
             </button>
             <button id="clue2" type="button" class="btn btn-lg btn-outline-dark" onclick="clue(2)" disabled>
               <span id="clue2-pre">2 pt. Clue</span>
+              <span id="clue2-next" hidden>&gt;&gt; 2 pt. Clue &lt;&lt;</span>
               <span id="clue2-post" hidden>{{ quad['C2']|safe }}</span>
             </button>
             <button id="clue1" type="button" class="btn btn-lg btn-outline-dark" onclick="clue(1)" disabled>
               <span id="clue1-pre">1 pt. Clue</span>
+              <span id="clue1-next" hidden>&gt;&gt; 1 pt. Clue &lt;&lt;</span>
               <span id="clue1-post" hidden>{{ quad['C1']|safe }}</span>
             </button>
           </div>
@@ -79,7 +84,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Quadegory: <strong>{{ quad['answer']|safe }}</strong>
+          <h3>{{ quad['answer']|safe }}</h3>
           <p class="mt-3">{{ quad['fact']|safe }}</p>
         </div>
       </div>
@@ -90,9 +95,13 @@
     function clue(i) {
       document.getElementById('clue' + i).disabled = true;
       document.getElementById('clue' + i + '-pre').hidden = true;
-      document.getElementById('clue' + i + '-post').hidden = false;
+      document.getElementById('clue' + i + '-next').hidden = true;
+      document.getElementById('clue' + i + '-post').hidden = false;;
       if (i > 1) {
         document.getElementById('clue' + (i - 1)).disabled = false;
+        document.getElementById('clue' + (i - 1) + '-pre').hidden = true;
+        document.getElementById('clue' + (i - 1) + '-next').hidden = false;
+
       }
     }
   </script>
