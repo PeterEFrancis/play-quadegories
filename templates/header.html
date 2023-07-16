@@ -1,0 +1,44 @@
+
+<nav class="navbar navbar-expand-md bg-light" style="--bs-breadcrumb-divider: '>';">
+  <div class="container-fluid pb-0">
+    
+    <ol class="breadcrumb m-0 py-2 ">
+
+      <li class="breadcrumb-item">
+        <a href="/">Home</a>
+      </li>
+
+      {% if not collection %}
+      <li class="breadcrumb-item active">
+        Collections
+      </li>
+      {% else %}
+      <li class="breadcrumb-item">
+        <a href="/game">
+          Collections
+        </a>
+      </li>
+      {% if not quad_id %}
+      <li class="breadcrumb-item active">
+        {{ COLLECTIONS[collection]['name'] }}
+      </li>
+      {% else %}
+      <li class="breadcrumb-item">
+        <a href="/game/{{ collection }}">
+          {{ COLLECTIONS[collection]['name'] }}
+        </a>
+      </li>
+      <li class="breadcrumb-item active">
+        {{ quad_id }}
+      </li>
+
+      {% endif %}
+
+      {% endif %}
+
+
+    </ol>
+
+    <!-- <a class="navbar-brand navbar-brand-end abs fancy" href="/">Quadegories</a> -->
+  </div>
+</nav>

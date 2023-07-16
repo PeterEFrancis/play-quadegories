@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
-    <title>Quadegories: {{ COLLECTIONS[collection]['name'] }}</title>
+    <title>Quadegories:Error</title>
     <link rel="icon" type="image/png" href="/static/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,17 +28,8 @@
     <div class="container mb-5">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="my-5">
-            The {{ COLLECTIONS[collection]['name'] }} Collection
-          </h2>
-          <p class="lead my-5">
-            {{ COLLECTIONS[collection]['description'] }}
-          </p>  
-          {% for game in collection_data %}
-            <button type="button" class="btn btn-outline-secondary my-1" onclick="location.href='/game/{{ collection }}/{{ game['id'] }}'" style="width: 50px;">
-              {{ game['id'] }}
-            </button>
-          {% endfor %}
+          <h1 class="my-5">{{ num }}</h1>
+          <p class="lead">{{ msg }}</p>
         </div>
       </div>
     </div>
@@ -48,5 +39,3 @@
 
   </body>
 </html>
-
-
